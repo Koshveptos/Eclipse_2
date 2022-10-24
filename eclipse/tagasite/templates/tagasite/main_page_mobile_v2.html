@@ -17,7 +17,7 @@
 </script>-->
 <header id="header">
     <div id = "main-button">
-        <img src="/tagasite/static/tagasite/img/sourse/logo.png" id="header-logo" width="130px" height="130px"></img>
+        <img src="/tagasite/static/tagasite/img/sourse/logo.png" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
         <div class = "name">Таганрог</div>
     </div>
     <div id="menu"></div>
@@ -29,10 +29,10 @@
     </div>
     <div id="hid-menu">
         <ul>
-            <li><a href="#">Достопримечательности</a></li>
-            <li><a href="#">История</a> </li>
-            <li><a href="#">Институты</a></li>
-            <li><a href="#">IT-компании</a></li>
+            <li><a href="#"  onclick="document.location='attractions';">Достопримечательности</a></li>
+            <li><a href="#" onclick="document.location='history';">История</a> </li>
+            <li><a href="#" onclick="document.location='abityrienty';">Институты</a></li>
+            <li><a href="#" onclick="document.location='it';" >IT-компании</a></li>
         </ul>
     </div>
 </header>
@@ -160,7 +160,8 @@
 </div>
 
 <div id="feedback-m">
-    <h2 id="fb-h">ОБРАТНАЯ СВЯЗЬ</h2>
+
+     <h2 id="fb-h">ОБРАТНАЯ СВЯЗЬ</h2>
     <!--<a id="fb-inf">Какой-то текст</a>
     <div class="block">
         <a class="hl">ЧТО-ТО</a>
@@ -180,6 +181,34 @@
         <a class="snd-line">*НОМЕР* (нах он нужен)?</a>
         <a class="thr-line">ПОЧТА</a>
     </div>-->
+    <div id="form">
+        <input id="ur-name" placeholder="Ваше Имя">
+        <input id="ur-email" placeholder="Ваше Email">
+        <input id="ur-msg" placeholder="Сообщение">
+        <div id="send">
+            <a id="send-txt">ОТПРАВИТЬ</a>
+        </div>
+    </div>
+    <!--<a id="fb-inf">Какой-то текст</a>
+    <div class="block">
+        <a class="hl">ЧТО-ТО</a>
+        <img class="ft1" src="/sourse/placeholder.png">
+        <img class="ft2" src="/sourse/smartphone%20(1).png">
+        <img class="ft3" src="/sourse/mail.png">
+        <a class="frs-line">ХЗ</a>
+        <a class="snd-line">*НОМЕР* (нах он нужен)?</a>
+        <a class="thr-line">ПОЧТА</a>
+    </div>
+    <div class="block b1">
+        <a class="hl">ЧТО-ТО</a>
+        <img class="ft1" src="/sourse/placeholder.png">
+        <img class="ft2" src="/sourse/smartphone%20(1).png">
+        <img class="ft3" src="/sourse/mail.png">
+        <a class="frs-line">ХЗ</a>
+        <a class="snd-line">*НОМЕР* (нах он нужен)?</a>
+        <a class="thr-line">ПОЧТА</a>
+    </div>-->
+
     <form action="" method="POST" class="form-contact contact_form">
      {% csrf_token %}
             {% if success %}
@@ -234,6 +263,7 @@
             </div>
         {% endif %}
     </form>
+    
 
 
 
