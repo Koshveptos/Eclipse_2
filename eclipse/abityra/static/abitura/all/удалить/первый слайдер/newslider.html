@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "style-sub.css">
+    <link rel="shortcut icon" href="../sourse/logo.png" type="image/png">
+    <title>TGNsite</title>
+    <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    if (screen.width <= 480) {
+        window.location = "http://tgnsite.ru.xsph.ru/page/main_page_mobile.html";
+    }
+</script>
+
+
+
+    <div id = "slider">
+        <img src="../Rectangle%2038.png" id="SFEDU-bg-1" >
+        <img src="../Rectangle%2013.png" id="SFEDU-bg-2" >
+        <img src="../Rectangle%2043.png" id="SFEDU-bg-3" >
+        <div class="sub-slider" id="SFEDU-main-block" onclick="poliToRight()">
+            <div id="SFEDU-block">ЮФУ</div>
+        </div>
+        <div class="sub-slider" id="POLI-main-block" onclick="poliToLeft()">
+            <div id="POLI-block">ПОЛИТЕХ</div>
+        </div>
+        <div class="sub-slider" id="PED-main-block" onclick="pedToLeft()">
+            <div id="PED-block">ПЕД</div>
+        </div>
+    </div>
+
+
+
+    <div id="SFEDU">
+        SFEDU
+    </div>
+    <div id="POLI">
+        POLI
+    </div>
+    <div id="PED">
+        PED
+    </div>
+
+<!--<div style="width: 100px;height: 100px;background-color: red; top: 1200px; left: 150px; position: absolute" onclick="viewDiv()"></div>
+<div style="width: 100px;height: 100px;background-color: green; top: 1200px; left: 350px; position: absolute" onclick="viewDiv2()"></div>
+
+<div id="test1" style="width: 100px;height: 100px;background-color: red; top: 1200px; left: 850px; position: absolute">3</div>
+<div id="test2" style="width: 100px;height: 100px;background-color: green; top: 1200px; left: 850px; position: absolute">4</div>-->
+
+
+
+
+<script>
+
+
+    function poliToLeft(){
+        pedToRight();
+        document.getElementById("POLI-main-block").style.animationDuration = "1.5s";
+        document.getElementById("POLI-main-block").style.animationName = "PoliToLeft";
+        document.getElementById("POLI-main-block").style.left = "182px";
+
+
+        /*document.getElementById("SFEDU-bg-1").style.width = "182px";
+        document.getElementById("SFEDU-bg-1").style.height = "711px";
+        document.getElementById("SFEDU-bg-1").style.borderRadius = "20px 0px 0px 20px";*/
+
+        document.getElementById("SFEDU-bg-1").style.display = "none";
+        document.getElementById("SFEDU-bg-2").style.display = "block";
+        document.getElementById("SFEDU-bg-3").style.display = "none";
+
+
+        document.getElementById("SFEDU").style.display = "none";
+        document.getElementById("POLI").style.display = "block";
+        document.getElementById("PED").style.display = "none";
+    }
+
+    function poliToRight(){
+        pedToRight();
+        document.getElementById("POLI-main-block").style.animationDuration = "1.5s";
+        document.getElementById("POLI-main-block").style.animationName = "PoliToRight";
+        document.getElementById("POLI-main-block").style.left = "1097px";
+        document.getElementById("SFEDU-bg-1").style.display = "block";
+        document.getElementById("SFEDU-bg-2").style.display = "none";
+        document.getElementById("SFEDU-bg-3").style.display = "none";
+
+
+        document.getElementById("SFEDU").style.display = "block";
+        document.getElementById("POLI").style.display = "none";
+        document.getElementById("PED").style.display = "none";
+    }
+
+
+
+    function pedToLeft(){
+        poliToLeft();
+        document.getElementById("PED-main-block").style.animationDuration = "1.5s";
+        document.getElementById("PED-main-block").style.animationName = "PedToLeft";
+        document.getElementById("PED-main-block").style.left = "364px";
+        document.getElementById("SFEDU-bg-1").style.display = "none";
+        document.getElementById("SFEDU-bg-2").style.display = "none";
+        document.getElementById("SFEDU-bg-3").style.display = "block";
+
+        document.getElementById("SFEDU").style.display = "none";
+        document.getElementById("POLI").style.display = "none";
+        document.getElementById("PED").style.display = "block";
+    }
+    function pedToRight(){
+        document.getElementById("PED-main-block").style.animationDuration = "1.5s";
+        document.getElementById("PED-main-block").style.animationName = "PedToRight";
+        document.getElementById("PED-main-block").style.left = "1279px";
+    }
+
+
+
+
+
+    /*function viewDiv(){
+        document.getElementById("test1").style.display = "block";
+        document.getElementById("test2").style.display = "none";
+    }
+    function viewDiv2(){
+        document.getElementById("test2").style.display = "block";
+        document.getElementById("test1").style.display = "none";
+    }*/
+</script>
+
+
+
+
+
+
+
+
+<script>
+    let i = 1;
+    for(let li of carousel.querySelectorAll('li')) {
+        li.style.position = 'relative';
+        li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+        i++;
+    }
+
+    /* конфигурация */
+    let width = 1800; // ширина картинки
+    let count = 1; // видимое количество изображений
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0; // положение ленты прокрутки
+
+    carousel.querySelector('.button-prev').onclick = function() {
+        // сдвиг влево
+        position += width * 1;
+        // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+        position = Math.min(position, 0)
+        list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.button-next').onclick = function() {
+        // сдвиг вправо
+        position -= width * 1;
+        /*position -= width / 2;*/
+        /*position -= width / 2;*/
+        // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+        position = Math.max(position, -width * (listElems.length - count));
+        list.style.marginLeft = position + 'px';
+    };
+</script>
+<!--<script type="text/javascript">
+    flowplayer("player", {src : "https://www.youtube.com/watch?v=yAWx-cqstr0", wmode: "transparent"});
+</script>-->
+</body>
+</html>

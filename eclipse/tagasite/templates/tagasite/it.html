@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang = "ru">
+
+  <!-- Bootstrap CSS (jsDelivr CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "/it/static/it/css/it-desk.css" content="width=device-width">
+        <link rel="shortcut icon" href="/it/static/it/img/desc/images/other/logo.png" type="image/png">
+        <title>TGNit</title>
+        <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
+        <script type="text/javascript" src = "components/slider.js"></script>
+    </head>
+
+    <body>
+
+        <nav id="header-main" lang="ru-RU" dir="ltr" role="navigation">
+            <img id="logo" src="/it/static/it/img/desc/images/other/logo.png" onclick="document.location='main.html'">
+            <div id="sights" onclick="document.location='Attraction.html';">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</div>
+            <div id="name">TGN_Travel</div>
+            <div id="IT">IT-КОМПАНИИ</div>
+            <div id="history">ИСТОРИЯ</div>
+            <div id="study">ИНСТИТУТЫ</div>
+        </nav>
+
+        <iframe id = "first-video" poster  src="https://www.youtube.com/embed/rjLjkgPNe1g" title="IT-Столица России. Таганрог" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2 id = "an_h2">IT СТОЛИЦА ЮГА</h2>
+        <p id = "af_an_h2">
+            В Таганроге сосредоточено большое количество разнонаправленных IT-компаний. В городе находятся академии, в которых начинающие разработчики могут повысить свою квалификацию. Стоит отметить, что в Таганроге подготавливает специалистов ИКТИБ, многие выпускники которого успешно продолжают свою профессиональную деятельность в IT-секторе.            
+        </p>
+        <h2 id = "main_h2">IT-КОМПАНИИ ТАГАНРОГА</h2>
+
+        <div id = "line-bef"></div>
+        <div id = "oggetto">
+            <img id = "main-logo" src = "/it/static/it/img/desc/images/other/oggetto.svg" alt="">
+            <div id = "og-1">
+                <img class = "og-icon" alt="" src = "/it/static/it/img/desc/images/other/og-1.svg">
+                <p>
+                    13 лет опыта на рынках России и зарубежья
+                </p>
+            </div>
+            <div id = "og-2">
+                <img class = "og-icon"  alt="" src = "/it/static/it/img/desc/images/other/og-2.svg">
+                <p>
+                    1-й официальный партнер Magento в России
+                </p>
+            </div>
+            <div id = "og-3">
+                <img class = "og-icon"  alt="" src = "/it/static/it/img/desc/images/other/og-3.svg">
+                <p>
+                    150+ человек в компании. Крупнейший собственный eCommerce production
+                </p>
+            </div>
+            <div id = "og-4">
+                <img class = "og-icon"  alt="" src = "/it/static/it/img/desc//images/other/og-4.svg">
+                <p>
+                    Входит в ТОП-5 компаний России, создающих системы электронной коммерции для крупных клиентов.
+                </p>
+            </div>
+            <form action="https://oggetto.ru/" target = "_blank" alt="">
+                <button>GO!</button>
+            </form>
+        </div>
+        <div id = "og-between"></div>
+
+
+
+        <div id = "dunice">
+            <img id = "logo-d" src = "/it/static/it/img/desc/images/other/dunice-logo.svg" alt="">
+            <img id = "side-photo" src = "/it/static/it/img/desc/images/other/dunice-side.svg" alt="">
+            <h3>О компании</h3>
+            <p>
+                Занимается разработкой веб-сайтов 
+                <br>
+                и 
+                мобильных приложений,
+                <br>
+                аналитикой,
+                <br>
+                дизайном,
+                <br>
+                технической поддержкой и DevOps. 
+            </p>
+            <form action="https://www.dunice.net/ru" target = "_blank">
+                <button>ПОДРОБНЕЙ</button>
+            </form>
+        </div>  
+        <div id = "af-dunice"></div>
+
+        <div id = "inostudio">
+            <img id ="in-logo" src = "/it/static/it/img/desc/images/other/for-inostudio.svg" alt="">
+            <img id = "f-in" src = "/it/static/it/img/desc/images/other/Ellipse 11.svg" alt="">
+            <p id = "in-img">
+                Job-сайт для альфа-банка, социальная сеть для ученых
+            </p>
+            <p id = "in-p">
+                сервисы в области электронной торговли, образования,  девелопмента
+            </p>
+            <form action="https://inostudio.com/" target = "_blank">
+                <button>О КОМПАНИИ</button>
+            </form>
+        </div>
+        <div id = "after-in"></div>
+
+        <div id = "umbrella">
+            <div id = "um-head">
+                <img src = "/it/static/it/img/desc/images/other/umbrella.svg" alt="">
+            </div>
+            <div id = "um-main">
+                <div id = "f-line"></div>
+                <h2 id = "h2-m">РАЗРАБОТКА СОФТА И IT-КОНСАЛТИНГ</h2>
+                <div id = "s-line"></div>
+                <h2 id = "h2-else">О КОМПАНИИ</h2>
+                <div id = "fact-1">
+                    <h3>ПРОЕКТЫ</h3>
+                    <p class = "fact-p">СВЫШЕ 250  ГОТОВЫХ РЕШЕНИЙ</p>
+                </div>
+                <div id = "fact-2">
+                    <h3>ОПЫТ РАБОТЫ</h3>
+                    <p class = "fact-p">БОЛЬШЕ 12 ЛЕТ НА РЫНКЕ </p>
+                </div>
+                <div id = "fact-3">
+                    <h3>ЗАКАЗЧИКИ</h3>
+                    <p class = "fact-p">ПРЕИМУЩЕСТВЕННО ИЗ США И КАНАДЫ</p>
+                </div>
+            </div>
+            <form action="https://umbrellait.ru/" target = "_blank">
+                <button>ПОДРОБНЕЙ</button>
+            </form>
+        </div>
+        <div id = "af-um"></div>
+
+
+
+        <div id = "alpaca">
+            <h2>ALPACA</h2>
+            <h3>IT company</h3>
+            <p>
+                Разработка приложений для стартапов, быстрорастущих компаний и бизнеса
+            </p>
+            <img id = "pol-1" src = "/it/static/it/img/desc/images/other/polygon-1.svg" alt="">
+            <img id = "pol-2" src = "/it/static/it/img/desc/images/other/polygon-2.svg" alt="">
+            <img id = "pol-3" src="/it/static/it/img/desc/images/other/polygon-3.svg"   alt="">
+            <form action="https://alpacait.com/" target = "_blank">
+                <button id ="orange">КЛИЕНТУ</button>
+            </form>
+            <form  action="https://alpacait.com/" target = "_blank">
+                <button id = "blue">РАЗРАБОТЧИКУ</button>
+            </form>
+        </div>
+        <div id = "af-alpaca"></div>
+
+
+        <div id = "justice">
+            <div id = "jus-head">
+                <img src = "/it/static/it/img/desc/images/other/justice.svg" alt="">
+            </div>
+            <div id = "jus-main">
+                <img id = "back" src = "/it/static/it/img/desc/images/other/for-justice.svg" alt = "">
+                <h2>О КОМПАНИИ</h2>
+                <div class = "j-block" id = "f-block">
+                    <div class = 'point' id = 'f'></div>
+                    <h3>СПЕЦИАЛИСТЫ</h3>
+                    <p>
+                        В штабе компании более 35 опытных специалистов
+                    </p>
+                </div>
+                <div class = "j-block" id = "s-block">
+                    <div class = 'point' id = 's'></div>
+                    <h3>МЕРОПРИЯТИЯ</h3>
+                    <p>
+                        Более 50 мероприятий, проведенных внутри компании в этом году
+                    </p>
+                </div>
+                <div class = "j-block" id = "t-block">
+                    <div class = 'point' id = 't'></div>
+                    <h3>ФИНТЕХ</h3>
+                    <p>
+                        Основной сферой деятельности компании является финтех. Готово более 15 проектов
+                    </p>
+                </div>
+                <div class = "j-block" id = "fo-block">
+                    <div class = 'point' id = 'fo'></div>
+                    <h3>ЭКОЛОГИЯ</h3>
+                    <p>
+                        20кг макулатуры и более 100 ПЭТ-бутылок было отправлено компанией на переработку
+                    </p>
+                </div>
+            </div>
+            <form  action="https://justice-it.ru/" target = "_blank">
+                <button>ПОДРОБНЕЕ</button>
+            </form>
+        </div>
+        <div id = "af-jus"></div>
+
+
+
+        <div id = "exceed">
+            <img id ="ex-logo" src = "/it/static/it/img/desc/images/other/exceed-logo.svg" alt="">
+            <h2>О компании</h2>
+            <p id = "ex-p">
+                Компания занимается веб- и мобильной разработкой в области CRM-систем для бизнеса
+            </p>
+            <img id = "ex-side" src = "/it/static/it/img/desc/images/other/exceed-side.svg" alt="">
+            <div class = "exceed-block" id = "ex-first">
+                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <p>
+                    Fullstack-разработка.
+                    Работа как с клиентс-
+                    кой, так и с серверной
+                    частью
+                </p>
+            </div>
+            <div class = "exceed-block" id = "ex-second">
+                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <p>
+                    Нативная и кроссплат-
+                    форменная разработка
+                    приложений для IOS
+                    и Android
+                </p>
+            </div>
+            <div class = "exceed-block" id = "ex-third">
+                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <p>
+                    UX/UI Дизайн удобный
+                    для использования на
+                    любом устройстве
+                </p>
+            </div>
+            <div class = "exceed-block" id = "ex-fourth">
+                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <p>
+                    DEVOPS
+                    Используются лучшие
+                    методы и практики 
+                    Devops для повыше-
+                    ния эффективности
+                    работы
+                </p>
+            </div>
+            <div class = "exceed-block" id = "ex-fifth">
+                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <p>
+                    Тестирование
+                    Специалисты контро-
+                    лируют надежность
+                    продукта, тестируя
+                    его на всех этапах
+                    разработки
+                </p>
+            </div>
+            <form  action="https://exceed-team.com/ru" target = "_blank">
+                <button>ПОДРОБНЕЕ</button>
+            </form>
+        </div>
+        <div id = "af-exceed"></div>
+
+
+        <div id = "lachestry">
+            <img id = "lac-name" src = "/it/static/it/img/desc/images/other/lachestry-name.svg" alt="">
+            <img src = "/it/static/it/img/desc/images/other/lac-logo.svg" id = "lac-logo" alt = "">
+            <h2 id = "lac-h2">О компании</h2>
+            <p id = "under-h2">
+                Компания предоставляет услуги для электронной коммерции. В возможности разработчиков входит выполнение заказов по сложности от цикла разработки сайта Magento, до реализации расширений для Magento. 
+            </p>
+            <div class = "side-inf" id = "first-side-inf">
+                <p>
+                    Команда работает с обеими версиями Magento.
+                </p>
+                <div id = "lac-circle"></div>
+            </div>
+            <div class = "side-inf" id = "second-side-inf">
+                <p>
+                    Знания специалистов подтверждены официальными сертификатами Magento.
+                </p>
+                <div id = "lac-circle"></div>
+            </div>
+            <form  action="https://lachestry.com/" target = "_blank">
+                <button>ПОДРОБНЕЕ</button>
+            </form>
+        </div>
+
+        
+        <div id = "line-bef-2"></div>
+
+
+        <div id="last-block">
+            <a id="first">Copyright (с) 2022 Eclipse</a>
+            <a id="second">Telegram —     Vkontakte —     E-mail</a>
+            <img id="last-picture" src="/it/static/it/img/desc/images/other/Full_Logo.svg" alt="">
+        </div>
+
+    </body>
+
+</html>

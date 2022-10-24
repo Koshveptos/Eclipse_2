@@ -1,0 +1,975 @@
+html{
+    position:absolute;
+    height:100%;
+    max-width:1100px;
+    width:1100px;
+    zoom:87%;
+    overflow-x:hidden;
+}
+body{
+    position: relative;
+    max-width: 1080px;
+    width:1085px;
+    height: 100%;
+    background: #F9F7F7;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('imgfonts/Montserrat-VariableFont_wght.ttf') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+    
+img {
+max-width: 100%;
+}
+
+
+/*шапка сайта*/
+.colortxt{
+    color: #E0AB4D;
+}
+#header-logo{
+    position:absolute;
+    left:40px;
+}
+#header{
+    height: 117px;
+    width: 1040px;
+    /*position: fixed;*/
+    top: 0px;
+    z-index: 999999;
+    transition: all .3s ease;
+    /*background-color: red;*/
+}
+#header.out {
+    transform: translateY(-100%);
+}
+
+
+.headder-border{
+    position: absolute;
+    width: 229px;
+    height: 65px;
+    left: 180px;
+    top: 29px;
+    cursor: pointer;
+    user-select: none;
+
+    border: 2px solid rgba(209, 169, 84, 0.9);
+    box-sizing: border-box;
+    /*background-color: yellow;*/
+}
+.headder-border a{
+    position: absolute;
+    width: 182px;
+    height: 34px;
+    left: 23px;
+    top: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 34px;
+    user-select: none;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* Accent */
+
+    color: #D1A954;
+}
+#hid-menu a{
+    text-decoration:none;
+    display:block;
+    padding:30px;
+    width:1100px;
+    background-color:#D1A954;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-bottom: 3px solid black;
+    font-family: 'Montserrat';
+    text-align:center;
+    font-size:45px;
+    color:white;
+}
+#hid-menu ul{
+    list-style:none;
+    width:1080px;
+    padding-left: 0%;
+    font-family: 'Montserrat';
+}
+#hid-menu li{
+    list-style:none;
+    width:1080px;
+}
+#hid-menu{
+    top:130px;
+    width: 1000px;
+    z-index:99999;
+    height:480px;
+    position: absolute;
+    background-color: var(--black);
+    display:none;
+}
+#drop-menu{
+    position: absolute;
+    left: 950px;
+    top: 40px;
+    width: 70px;
+    /*background-color: red;*/
+    height: 52px;
+    cursor: pointer;
+}
+#ex-menu{
+    position: absolute;
+    left: 950px;
+    top: 10px;
+    cursor: pointer;
+    font-size:77px;
+    display:none;
+}
+#first-line{
+    position: absolute;
+    width: 57px;
+    height: 3px;
+    background-color: #000000;
+
+    border: 1px solid #000000;
+}
+#second-line{
+    position: absolute;
+    width: 57px;
+    height: 3px;
+    top: 21px;
+    background-color: #000000;
+
+    border: 1px solid #000000;
+}
+#third-line{
+    position: absolute;
+    width: 57px;
+    height: 3px;
+    top: 42px;
+    background-color: #000000;
+
+    border: 1px solid #000000;
+}
+#main-button{
+    position:absolute;
+    left:10px;
+    width:150px;
+}
+.name{
+    position:absolute;
+    font-size:60px;
+    font-weight:400;
+    left:180px;
+    width:100px;
+    top:30px;
+    color: #D1A954;
+}
+
+
+/* ТЕСТ */
+.slider {
+    position: absolute;
+
+    height: 900px;
+    /*background-color: red;*/
+    left: 65px;
+    top: 130px;
+    margin: 50px auto 0;
+    /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+    user-select: none;
+    /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+    touch-action: pan-y;
+}
+/* Если где-то внутри слайдера будут изображения,
+то нужно задать им pointer-events: none,
+чтобы они не перетаскивались мышью */
+
+.slider img {
+    /*position: relative;*/
+    poiner-events: none;
+    width: 950px;
+    height:900px;
+}
+
+.slider-list {
+    width: 950px;
+    height:900px;
+    overflow: hidden;
+}
+
+.slider-list.grab {
+    cursor: grab;
+}
+
+.slider-list.grabbing{
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+}
+
+.slide {
+    width: 950px;
+    height: 900px;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    /* Увеличиваем и центрируем цифру внутри слайда */
+    /*font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;*/
+    background-color: grey;
+}
+
+.slider-arrows {
+    margin-top: 150px;
+    /*top: 120px;*/
+    text-align: center;
+}
+
+.next,
+.prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.next.disabled,
+.prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
+
+.bg-bl-m{
+    position: absolute;
+    width: 950px;
+    height: 250px;
+    background: rgba(209, 169, 84, 0.9);
+    bottom: 0px;
+}
+.bg-box{
+    position: absolute;
+    width: 890px;
+    height: 190px;
+    left: 30px;
+    top: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+.bg-h{
+    left: 15px;
+    top: 26px;
+
+    position: absolute;
+    height: 30px;
+    width: 850px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+.mappos{
+    text-decoration: underline;
+    position:absolute;
+    top:1650px;
+    left:320px;
+    font-size:60px;
+}
+.mappos:link{
+    text-decoration: underline;
+    cursor: pointer;
+    position: relative;
+    color: #E0AB4D;
+}
+.mappos:visited{
+    color: #E0AB4D;
+}
+.mappos:hover{
+    cursor:pointer;
+    color:#D1A954;
+    text-decoration: underline;
+    text-decoration-color: #D1A954;
+}
+.mappos:active{
+    color:#D1A954;
+}
+
+#between{
+    position:absolute;
+    top:1080px;
+    width:1075px;
+    background-color:white;
+    height:150px;
+}
+#main-h2{
+    position:absolute;
+    top: 10px;
+    width:379px;
+    height:31px;
+    left:90px;
+    font-size:60px;
+    font-weight:500;
+    font-family: 'Montserrat';
+}
+
+
+.sight{
+    position:absolute;
+    width:1080px;
+    background-color: #F9F7F7;
+}
+.sight h3{
+    position:absolute;
+    top:-30px;
+    font-size:45px;
+    font-weight:300;
+    font-family: 'Montserrat';
+    left:80px;
+}
+.line-sight{
+    top:-30px;
+    position:absolute;
+    background-color: #E0AB4D;
+    height:10px;
+
+    width:1100px;
+}
+.sight img{
+    position:absolute;
+    top:100px;
+    left:100px;
+    height:700px;
+    width:850px;
+}
+.sight p{
+    position:absolute;
+    top: 730px;
+    left:70px;
+    width:970px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+.sight a{
+    left:320px;
+}
+
+.bg-h2{
+    position:absolute;
+    left:20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    top:-20px;
+    line-height:70px;
+}
+.bg-h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height:65px;
+    top:-50px;
+    left:10px;
+    font-size:60px;
+}
+#art_m{
+    left:60px;
+}
+#park_m{
+    font-size:58px;
+}
+
+#rows{
+    top:1300px;
+    height:1750px;
+}
+#rows a{
+    top:1470px;
+}
+#rows img{
+    top:60px;
+}
+#al1_palace{
+    top:2900px;
+    height:1700px;
+}
+#al1_palace h3{
+    left:140px;
+    width:800px;
+}
+#al1_palace p{
+    position:absolute;
+    top: 780px;
+    font-family: 'Montserrat';
+}
+#al1_palace a{
+    top:1520px;
+}
+#alferaki_{
+    position:absolute;
+    top:4550px;
+    height:1700px;
+}
+#alferaki_ h3{
+    left:280px;
+}
+#alferaki_ p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#alf_a{
+    position:absolute;
+    top:1660px;
+}
+#CheckovMonument{
+    position:absolute;
+    top:6340px;
+    height:1700px;
+}
+#CheckovMonument h3{
+    left:250px;
+}
+#CheckovMonument p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#checkhov_a{
+    position:absolute;
+    top:1760px;
+}
+#art_museum{
+    position:absolute;
+    top: 8230px;
+    height:1700px;
+}
+#art_museum h3{
+    left:250px;
+}
+#art_museum p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#art_a{
+    top:1610px;
+}
+#art_m{
+    top:-20px;
+    line-height:70px;
+}
+#lavka_Checkov{
+    position:absolute;
+    top:9970px;
+    height:1700px;
+}
+#lavka_Checkov h3{
+    left:340px;
+}
+#lavka_Checkov p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#lavka_Checkov a{
+    position:absolute;
+    top:1570px;
+}
+#Sharonov_house{
+    position:absolute;
+    top:11670px;
+    height:1700px;
+}
+#Sharonov_house h3{
+    left:340px;
+}
+#Sharonov_house p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#Sharonov_house a{
+    position:absolute;
+    top:1560px;
+}
+#Chaykovskiy{
+    position:absolute;
+    top:13360px;
+    height:1700px;
+}
+#Chaykovskiy h3{
+    left:240px;
+}
+#Chaykovskiy p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#Chaykovskiy a{
+    top:1710px;
+}
+#Chechov_house{
+    position:absolute;
+    top:15210px;
+    height:1700px;
+}
+#Chechov_house h3{
+    left:330px;
+}
+#Chechov_house p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#Chechov_house a{
+    top:1660px;
+}
+#ladder{
+    position:absolute;
+    top:17010px;
+    height:1700px;
+}
+#ladder h3{
+    left:280px;
+}
+#ladder p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#ladder a{
+    top:1750px;
+}
+#lit{
+    position:absolute;
+    top:18900px;
+    height:1700px;
+}
+#lit h3{
+    left:280px;
+    width:1000px;
+    left:50px;
+}
+#lit p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#lit a{
+    top:1610px;
+}
+#durov{
+    position:absolute;
+    top:20330px;
+    height:1700px;
+}
+#durov h3{
+    left:280px;
+    width:500px;
+    left:290px;
+}
+#durov p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#durov{
+    position:absolute;
+    top:20650px;
+    height:1700px;
+}
+#durov a{
+    top:1760px;
+}
+#vasilenko{
+    position:absolute;
+    top:22550px;
+    height:1700px;
+}
+#vasilenko h3{
+    left:280px;
+    width:800px;
+    left:190px;
+}
+#vasilenko p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#vasilenko a{
+    top:1410px;
+}
+#ranevskaya{
+    position:absolute;
+    top:24100px;
+    height:1700px;
+}
+#ranevskaya h3{
+    left:280px;
+    width:800px;
+    left:210px;
+}
+#ranevskaya p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    left:70px;
+    font-family: 'Montserrat';
+}
+#ranevskaya a{
+    top:1020px;
+}
+#october{
+    position:absolute;
+    top:25260px;
+    height:1700px;
+}
+#october h3{
+    left:280px;
+    width:800px;
+    left:230px;
+}
+#october p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#october a{
+    top:1460px;
+}
+#cherry{
+    position:absolute;
+    top:26860px;
+    height:1700px;
+}
+#cherry h3{
+    top:-40px;
+    left:280px;
+    width:1070px;
+    left:0px;
+    text-align:center;
+}
+#cherry p{
+    position:absolute;
+    top: 820px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#cherry img{
+    top:120px;
+}
+#cherry a{
+    top:1540px;
+}
+#garibaldy{
+    position:absolute;
+    top:28540px;
+    height:1700px;
+}
+#garibaldy h3{
+    left:80px;
+    width:950px;
+}
+#garibaldy p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#garibaldy a{
+    top:1360px;
+}
+#alex{
+    position:absolute;
+    top:30040px;
+    height:1700px;
+}
+#alex h3{
+    left:220px;
+    width:700px;
+}
+#alex p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#alex a{
+    top:1700px;
+}
+#petr{
+    position:absolute;
+    top:31880px;
+    height:1700px;
+}
+#petr h3{
+    left:300px;
+    width:600px;
+}
+#petr p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#petr a{
+    top:1750px;
+}
+#park{
+    position:absolute;
+    top:33770px;
+    height:1700px;
+}
+#park h3{
+    left:20px;
+    width:1070px;
+    top:-40px;
+    text-align:center;
+}
+#park img{
+    top:130px;
+}
+#park p{
+    position:absolute;
+    top: 820px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#park a{
+    top:1700px;
+}
+#petruchino{
+    position:absolute;
+    top:35605px;
+    height:1700px;
+}
+#petruchino h3{
+    left:250px;
+    width:600px;
+    text-align:center;
+}
+#petruchino p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#petruchino a{
+    top:1320px;
+}
+#primor{
+    position:absolute;
+    top:38955px;
+    height:1700px;
+}
+#primor h3{
+    left:20px;
+    width:1080px;
+    text-align:center;
+}
+#primor p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#primor a{
+    top:1800px;
+}
+#naber{
+    position:absolute;
+    top:37060px;
+    height:1700px;
+}
+#naber h3{
+    left:20px;
+    width:1070px;
+    text-align:center;
+}
+#naber p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#naber a{
+    top:1750px;
+}
+#clocks{
+    position:absolute;
+    top:40890px;
+    height:1700px;
+}
+#clocks h3{
+    left:20px;
+    width:1070px;
+    text-align:center;
+}
+#clocks p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#clocks a{
+    top:1700px;
+}
+#aviation{
+    position:absolute;
+    top:42730px;
+    height:1700px;
+}
+#aviation h3{
+    left:20px;
+    width:1070px;
+    text-align:center;
+}
+#aviation p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#aviation a{
+    top:1700px;
+}
+#Hram{
+    position:absolute;
+    top:44580px;
+    height:1700px;
+}
+#Hram h3{
+    left:20px;
+    width:1070px;
+    text-align:center;
+}
+#Hram p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#Hram a{
+    top:1710px;
+}
+#Hram_Nicolay{
+    position:absolute;
+    top:46440px;
+    height:1700px;
+}
+#Hram_Nicolay h3{
+    left:20px;
+    width:1070px;
+    text-align:center;
+}
+#Hram_Nicolay p{
+    position:absolute;
+    top: 780px;
+    font-size:40px;
+    font-family: 'Montserrat';
+}
+#Hram_Nicolay a{
+    top:1800px;
+}
+#last_line{
+    max-width:1080px;
+    top:48350px;
+}
+
+/*Лого команды, vk и т.п.*/
+#last-block{
+    position: absolute;
+    width: 1050px;
+    height: 137px;
+    left: 0px;
+    top: 48360px;
+}
+#first{
+    position: absolute;
+    width: 319px;
+    height: 15px;
+    left: 120px;
+    top: 65px;
+
+    /* p */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+
+
+    color: #000000;
+}
+#second{
+    position: absolute;
+    width: 261px;
+    height: 15px;
+    left: 760px;
+    top: 65px;
+
+    /* p */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+
+    text-align: right;
+
+    color: #000000;
+}
+#last-picture{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 400px;
+    top: 2px;
+}

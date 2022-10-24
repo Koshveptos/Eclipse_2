@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#test1{
+    display: none;
+}
+#test2{
+    display: none;
+}
+
+body{
+    position: relative;
+    width: 1900px;
+    height: 100%;
+    /* background: #FFFFFF;*/
+    /*background-color: grey;*/
+}
+/*body{
+    background-color: red;
+}*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    /*    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff');*/
+}
+/*.navbar-sticky{
+    background-color: red;
+    z-index: 999999;
+    height: 161px;
+    top: 0px;
+    width: 100%;
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    width: 1900px;
+    height: 100%;
+    /* background: #FFFFFF;*/
+    /*background-color: grey;*/
+}
+/*body{
+    background-color: red;
+}*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    /*    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff');*/
+}
+
+.carousel {
+    position: absolute;
+    width: 1800px;
+    height: 721px;
+
+    left: 80px;
+
+}
+.carousel img {
+    width: 580px;
+    height: 650px;
+    /*top: 0px;*/
+    margin-right: 60px;
+    margin-left: -36px;
+    /*padding-right: 130px;*/
+    /*margin-right: 130px;*/
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+}
+.bg-block{
+    position: absolute;
+    z-index: 99999;
+    width: 330px;
+    height: 330px;
+    border: 4px solid #E0AB4D;
+    border-radius: 9px;
+    bottom: 0px;
+    left: -36px;
+
+}
+.bg-txt{
+    position: absolute;
+    width: 330px;
+    height: 119px;
+    left: 0px;
+    top: 220px;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 49px;
+    text-align: center;
+
+    color: #000000;
+
+}
+.bg-block img{
+    position: absolute;
+    left: 120px;
+    top: 25px;
+    width: 160px;
+    height: 180px;
+    display: block;
+}
+.hd{
+    left: -1px;
+    top: 21px;
+
+    position: absolute;
+    height: 30px;
+    width: 550px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+.hd-info{
+    position: absolute;
+    left: -1px;
+    top: 70px;
+    width: 550px;
+    height: 56px;
+
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+.box{
+    position: absolute;
+    width: 550px;
+    height: 126px;
+    left: 15px;
+    top: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+.arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+}
+.arrow1 {
+    position: absolute;
+    top: 900px;
+    left: 1041px;
+    height: 80px;
+    width: 60px;
+    /*background-color: red;*/
+    border: 1px solid black;
+}
+.button-next{
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    left: 1070px;
+    display: block;
+    color:black;
+    cursor: pointer;
+    top: 450px;
+}
+.button-prev{
+    /*background-color: red;*/
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    left: 650px;
+    display: block;
+    cursor: pointer;
+    top: 450px;
+}
+#l-button-top{
+    position: absolute;
+    width: 50.91px;
+    height: 0px;
+    top: 10px;
+    /*left: 704px;
+    top: 929.23px;*/
+
+    border: 1px solid #000000;
+    transform: rotate(-45deg);
+}
+#l-button-bot{
+    position: absolute;
+    width: 50.91px;
+    height: 0px;
+    top: 46px;
+    /*left: 704px;
+    top: 929px;*/
+
+    border: 1px solid #000000;
+    transform: rotate(45deg);
+}
+#r-button-top{
+    position: absolute;
+    width: 50.91px;
+    height: 0px;
+    top: 10px;
+    /*left: 704px;
+    top: 929.23px;*/
+
+    border: 1px solid #000000;
+    transform: rotate(45deg);
+}
+#r-button-bot{
+    position: absolute;
+    width: 50.91px;
+    height: 0px;
+    top: 46px;
+    /*left: 704px;
+    top: 929px;*/
+
+    border: 1px solid #000000;
+    transform: rotate(-45deg);
+}
+.arrow:focus {
+    outline: none;
+}
+.arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+.gallery {
+    /*left: 1px;*/
+    position: absolute;
+    /*left: 25px;*/
+    /*background-color: red;*/
+    width: 1800px;
+    overflow: hidden;
+}
+.gallery ul {
+    /*position: absolute;*/
+    height: 600px;
+    width: 9999px;
+    /*margin: 0;*/
+    /*padding: 30px;*/
+    list-style: none;
+    /*background-color: red;*/
+    transition: margin-left 250ms;
+    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+    font-size: 0;
+}
+.gallery li {
+    width: 330px;
+    height: 330px;
+    left: 45px;
+    margin: 53px;
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+#big-block{
+    position: absolute;
+    /*background-color: green;*/
+    width: 1540px;
+    height: 1386px;
+}
+
+#all-in{
+    width: 1110px;
+    height: 880px;
+    position: absolute;
+    top: 580px;
+    left: 405px;
+
+}
+
+.cafedra{
+    width: 1110px;
+    height: 790px;
+    position: absolute;
+    display: none;
+}
+
+.cafedra img{
+    position: absolute;
+    left: 490px;
+    width: 140px;
+    height: 140px;
+}
+
+
+.cfd-h{
+
+
+    position: absolute;
+    width: 1082px;
+    height: 49px;
+    top: 170px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.cfd-a{
+    position: absolute;
+    width: 1110px;
+    height: 490px;
+    top: 359px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #000000;
+
+}
