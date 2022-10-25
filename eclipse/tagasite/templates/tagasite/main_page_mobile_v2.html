@@ -1,13 +1,13 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang = "ru">
 <head>
     <meta charset = "utf-8" name="viewport"  width = "device-width">
-    <link rel = "stylesheet" href = "/tagasite/static/tagasite/css/style-main_mobile.css ">
-    <link rel="shortcut icon" href="/tagasite/static/tagasite/img/sourse/logo.png" type="image/png">
+    <link rel = "stylesheet" href = "{% static 'tagasite/css/style-main_mobile.css' %}">
+    <link rel="shortcut icon" href="{% static 'tagasite/img/sourse/logo.png' %}" type="image/png">
     <title>TGNsite</title>
     <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
-    <script type = "text/javascript" src = "/tagasite/static/tagasite/js/scripts/menu.js"></script>
+    <script type = "text/javascript" src = "{% static 'tagasite/js/scripts/menu.js' %}"></script>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 </script>-->
 <header id="header">
     <div id = "main-button">
-        <img src="/tagasite/static/tagasite/img/sourse/logo.png" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
+        <img src="{% static 'tagasite/img/sourse/logo.png' %}" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
         <div class = "name">Таганрог</div>
     </div>
     <div id="menu"></div>
@@ -43,7 +43,7 @@
     <div class="slider-list">
         <div class="slider-track">
             <div class="slide">
-                <img src="/tagasite/static/tagasite/img/sourse/bg1.png" width="1050px" height="1171px">
+                <img src="{% static 'tagasite/img/sourse/bg1.png' %}" width="1050px" height="1171px">
                 <div class="bg-bl-m">
                     <div class="bg-box">
                         <h1 class="bg-h">ЛАВКА ЧЕХОВА</h1>
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="/tagasite/static/tagasite/img/sourse/bg2.png" width="1050px" height="1171px">
+                <img src="{% static 'tagasite/img/sourse/bg2.png' %}" width="1050px" height="1171px">
                 <div class="bg-bl-m-2">
                     <div class="bg-box">
                         <h1 class="bg-h">ХУДОЖЕСТВЕННЫЙ МУЗЕЙ</h1>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="/tagasite/static/tagasite/img/sourse/bg3.png" width="1050px" height="1171px">
+                <img src="{% static 'tagasite/img/sourse/bg3.png' %}" width="1050px" height="1171px">
                 <div class="bg-bl-m-3">
                     <div class="bg-box">
                         <h1 class="bg-h">ДВОРЕЦ АЛФЕРАКИ</h1>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="/tagasite/static/tagasite/img/sourse/bg1.png" width="1050px" height="1171px">
+                <img src="{% static 'tagasite/img/sourse/bg1.png' %}" width="1050px" height="1171px">
                 <div class="bg-bl-m-4">
                     <div class="bg-box">
                         <h1 class="bg-h">ЛАВКА ЧЕХОВА</h1>
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="/tagasite/static/tagasite/img/sourse/bg1.png" width="1050px" height="1171px">
+                <img src="{% static 'tagasite/img/sourse/bg1.png' %}" width="1050px" height="1171px">
                 <div class="bg-bl-m-5">
                     <div class="bg-box">
                         <h1 class="bg-h">ЛАВКА ЧЕХОВА</h1>
@@ -101,11 +101,11 @@
     <h2 id="center-txt-m">О ГОРОДЕ</h2>
     <a id="centre-quote-m">«Весной город накрывал запах акаций, такой густой и тяжелый, что его с трудом пробивал морской ветер» - <span class="colortxt">Нелли Александровна </span></a>
     <video controls id="video-m" width="940" height="400">
-        <source src="/tagasite/static/tagasite/img/sourse/video/Taganrog.mp4" type="video/mp4">
-        <source src="/tagasite/static/tagasite/img/sourse/video/Taganrog.ogv" type="video/ogg">
-        <source src="/tagasite/static/tagasite/img/sourse/video/Taganrog.webm" type="video/webm">
+        <source src="{% static 'tagasite/img/sourse/video/Taganrog.mp4' %}" type="video/mp4">
+        <source src="{% static 'tagasite/img/sourse/video/Taganrog.ogv' %} " type="video/ogg">
+        <source src="{% static 'tagasite/img/sourse/video/Taganrog.webm' %}" type="video/webm">
     </video>
-    <img src="/tagasite/static/tagasite/img/sourse/logo.png" id="logo-info-m">
+    <img src="{% static 'tagasite/img/sourse/logo.png' %}" id="logo-info-m">
     <p id="main-int-m">
         Добро пожаловать в <span class="colortxt">Таганрог</span>!
     </p>
@@ -114,24 +114,24 @@
     </p>
     <!--<div id="del-line"></div>-->
     <div id="fact1-m">
-        <img src="/tagasite/static/tagasite/img/sourse/fct1.svg" class="l1">
+        <img src="{% static 'tagasite/img/sourse/fct1.svg' %}" class="l1">
         <h3  class="m-txt-m">IT СТОЛИЦА ЮГА</h3>
         <p  class="s-txt-m"><span class="colortxt">Таганрог</span> - уникальный город россии, в котором старинные здания сочетаются с технологиями тысяч <span class="colortxt">IT компаний</span>, основаных здесь и не только.     ***(1000 It?)***</p>
     </div>
     <div id="fact2-m">
-        <img src="/tagasite/static/tagasite/img/sourse/fct2.svg" class="l1">
+        <img src="{% static 'tagasite/img/sourse/fct2.svg' %}" class="l1">
         <h3  class="m-txt-m">РОДИНА ЧЕХОВА</h3>
         <p  class="s-txt-m"> Здесь родился и вырос талантливый русский писатель, прозаик, драматург, публицист и врач <span class="colortxt">Антон Павлович Чехов</span>.</p>
 
     </div>
     <div id="fact3-m">
-        <img src="/tagasite/static/tagasite/img/sourse/fct3.svg" class="l1">
+        <img src="{% static 'tagasite/img/sourse/fct3.svg' %} " class="l1">
         <h3 class="m-txt-m">ТРОИЦКАЯ КРЕПОСТЬ</h3>
         <p  class="s-txt-m">Мыс Таганий Рог, оказался идеальным местом для возведения мощного бастиона, который в последствии стал надежным щитом крупного торгового порта.</p>
 
     </div>
     <div id="fact4-m">
-        <img src="/tagasite/static/tagasite/img/sourse/fct4.svg" class="l1">
+        <img src="{% static 'tagasite/img/sourse/fct4.svg' %}" class="l1">
         <h3 class="m-txt-m">СОЛНЕЧЕНЫЕ ЧАСЫ</h3>
         <p class="s-txt-m">В нашем прекрасном городе сохранились настоящие, функциональные солнечные часы, по которым до сих пор можно определить время в солнечный день.</p>
 
@@ -140,17 +140,17 @@
 
 <div id="gallery-m">
     <a id="gal-name-m">ГАЛЕРЕЯ</a>
-    <img src="/tagasite/static/tagasite/img/sourse/logo.png" id="gal-logo-m">
+    <img src="{% static 'tagasite/img/sourse/logo.png' %}" id="gal-logo-m">
     <a id="gal-sub-name-m">ТАГАНРОГ</a>
-    <img id="f1" src="/tagasite/static/tagasite/img/sourse/C9cSUNzFv74%201.png">
-    <img id="f2" src="/tagasite/static/tagasite/img/sourse/Foto%204.png">
-    <img id="f3" src="/tagasite/static/tagasite/img/sourse/Foto%206.png">
-    <img id="f4" src="/tagasite/static/tagasite/img/sourse/Foto%207.png">
-    <img id="f5" src="/tagasite/static/tagasite/img/sourse/Foto%208.png">
+    <img id="f1" src="{% static 'tagasite/img/sourse/C9cSUNzFv74%201.png' %}">
+    <img id="f2" src="{% static 'tagasite/img/sourse/Foto%204.png' %} ">
+    <img id="f3" src="{% static 'tagasite/img/sourse/Foto%206.png' %}">
+    <img id="f4" src="{% static 'tagasite/img/sourse/Foto%207.png' %}">
+    <img id="f5" src="{% static 'tagasite/img/sourse/Foto%208.png' %}">
 </div>
 
 <div id="qt-m">
-    <img id="qt-img" src="/tagasite/static/tagasite/img/sourse/image3_m.png" width="1050px" height="500">
+    <img id="qt-img" src="{% static 'tagasite/img/sourse/image3_m.png' %}" width="1050px" height="500">
     <h2 id="qust-m">ЗАИНТЕРЕСОВАЛИ?</h2>
     <div id="yes-m">
         <a id="yes-txt-m">ДА</a>
@@ -182,6 +182,7 @@
         <a class="snd-line">*НОМЕР* (нах он нужен)?</a>
         <a class="thr-line">ПОЧТА</a>
     </div>-->
+    <!--
     <div id="form">
         <input id="ur-name" placeholder="Ваше Имя">
         <input id="ur-email" placeholder="Ваше Email">
@@ -190,6 +191,7 @@
             <a id="send-txt">ОТПРАВИТЬ</a>
         </div>
     </div>
+    -->
     <!--<a id="fb-inf">Какой-то текст</a>
     <div class="block">
         <a class="hl">ЧТО-ТО</a>
@@ -273,13 +275,13 @@
 
 <div id="welcome">
     <h3 id="w-h">ЖДЕМ В ГОСТИ</h3>
-    <img id="w-logo" src="/tagasite/static/tagasite/img/sourse/logo.png">
+    <img id="w-logo" src="{% static 'tagasite/img/sourse/logo.png' %}">
     <a id="w-a">ТАГАНРОГ</a>
-    <img id="w-f1" src="/tagasite/static/tagasite/img/sourse/Foto%209.png" class="wid-f">
-    <img id="w-f2" src="/tagasite/static/tagasite/img/sourse/f7.png" class="wid-f">
-    <img id="w-f3" src="/tagasite/static/tagasite/img/sourse/f8.png" class="wid-f">
-    <img id="w-f4" src="/tagasite/static/tagasite/img/sourse/Foto%208%20(1).png" class="wid-f">
-    <img id="w-f5" src="/tagasite/static/tagasite/img/sourse/Foto%209%20(1).png" class="wid-f">
+    <img id="w-f1" src="{% static 'tagasite/img/sourse/Foto%209.png' %} " class="wid-f">
+    <img id="w-f2" src="{% static 'tagasite/img/sourse/f7.png' %}" class="wid-f">
+    <img id="w-f3" src="{% static 'tagasite/img/sourse/f8.png' %}" class="wid-f">
+    <img id="w-f4" src="{% static 'tagasite/img/sourse/Foto%208%20(1).png' %}" class="wid-f">
+    <img id="w-f5" src="{% static 'tagasite/img/sourse/Foto%209%20(1).png' %}" class="wid-f">
     <!--<img id="w-f6" src="../sourse/Foto%2010.png" class="w-f" class="wid-f">-->
 </div>
 
@@ -294,7 +296,7 @@
 <div id="last-block">
     <a id="first">Copyright (с) 2022 Eclipse</a>
     <a id="second">Facebook —     Vkontakte —     Instagram</a>
-    <img id="last-picture" src="/tagasite/static/tagasite/img/sourse/Full_Logo.svg">
+    <img id="last-picture" src="{% static 'tagasite/img/sourse/Full_Logo.svg' %}">
 </div>
 
 

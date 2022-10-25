@@ -4,11 +4,11 @@
 
 <head>
     <meta charset = "utf-8">
-    <link rel = "stylesheet" href = "/history/static/history/css/his-mobile.css">
-    <link rel="shortcut icon" href="/history/static/history/img/images/logo.png" type="image/png">
+    <link rel = "stylesheet" href = "{% static  'history/css/his-mobile.css' %}">
+    <link rel="shortcut icon" href="{% static 'history/img/images/logo.png' %}" type="image/png">
     <title>TGNhistory</title>
     <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
-    <script type = "text/javascript" src = "/history/static/history/img/scripts/menu.js"></script>
+    <script type = "text/javascript" src = "{% static 'history/img/scripts/menu.js' %} "></script>
 </head>
 
 
@@ -17,7 +17,7 @@
 <!--шапка сайта-->
 <header id="header">
     <div id = "main-button">
-        <img src="/history/static/history/img/images/logo.png" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
+        <img src="{% static 'history/img/images/logo.png' %}" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
         <div class = "name">Таганрог</div>
     </div>
     <div id="menu"></div>
@@ -50,7 +50,7 @@
 
 
 <!--стрелка из фотографий-->
-<img id = "before-line" src = "/history/static/history/img/images/before-line.png">
+<img id = "before-line" src = "{% static 'history/img/images/before-line.png' %}">
 
 
 <!--стрелка-->
@@ -75,7 +75,7 @@
         В 1696 году после того, как был взят Азов, Петр1 распорядился начать строительство гавани и крепости на Таганьем Роге. Дату 12 сентября 1698 года было принято считать моментом основания города Таганрога, который первоначально назывался Троик на Таган-Роге. Руководил строительством гавани Матвей Симонт, а первый план крепости составил Эрнст Фридрих Боргсдорф, австрийский инженер.
 Крепость окружал земляной вал высотой 8 м, ров глубиной 5 м, общая протяженность крепости составляла 3 км.Крепость была оснащена пушками и гаубицами и многочисленными пороховыми погребами. Внутри крепость представляла собой: государев двор, городские палаты, Троицкую церковь, дома для простых людей, кабаки, склады, базары, колодцы.В августе 1696 года Приазовье становится крупнейшим в России местом ссылки «на вечное житье». Там же появилась первая в России каторга, центром которой стал Таганрог. В ссылку отправляли чиновников, духовных лиц, выходцев из дворянства, а также пленных турков и татар. В связи с началом Северной войны большую группу составляли шведы и жители Прибалтики, а также казаки Слободской Украины.
     </p>
-    <img id = "found-first-img" src = "/history/static/history/img/images/foundation-1.jpg" alt="">
+    <img id = "found-first-img" src = "{% static 'history/img/images/foundation-1.jpg' %}" alt="">
     <p id = "found-p2">
         В честь окончания строительства гавани в 1709 году Петр1 издал приказ изготовить памятную медаль, которая была овальной формы. На лицевой стороне медали было изображение Петра1, а на оборотной изображен план крепости и гавани Таганрога и надпись «За дело гавани капитану Матвею Симонову».
         <br>
@@ -91,7 +91,7 @@
         <br>
         В связи с основанием в 1783 году города Севастополя Таганрог потерял свое военно-стратегическое значение и стал крупнейшим портом России.
     </p>
-    <img id = "found-second-img" src = "/history/static/history/img/images/foundation-2.png" alt="">
+    <img id = "found-second-img" src = "{% static 'history/img/images/foundation-2.png' %}" alt="">
 </div>
 
 
@@ -108,8 +108,8 @@
         
         Таганрожцы гордятся своими выдающимися земляками, чтят их память, сохраняют и преумножают богатейшее историческое и культурное наследие города.
     </p>
-    <img id = "dev-first-img" src = "/history/static/history/img/images/block-2.png" alt="">
-    <img id = "dev-second-img" src = "/history/static/history/img/images/block-3.png" alt="">
+    <img id = "dev-first-img" src = "{% static 'history/img/images/block-2.png' %}" alt="">
+    <img id = "dev-second-img" src = "{% static 'history/img/images/block-3.png' %}" alt="">
 </div>
 
 
@@ -122,12 +122,12 @@
         <br>
         Практически у подножий зданий Старого города, на побережье Таганрогского залива, защищенном от штормов, расположились песчаные пляжи. В летнюю пору они с утра до вечера заполнены отдыхающими. На некоторых пляжах, где открыты ночные клубы и рестораны, купание и веселье продолжаются ночь напролет.
     </p>
-    <img id = "modern-first-img" src = "/history/static/history/img/images/modern-1.png">
+    <img id = "modern-first-img" src = "{% static 'history/img/images/modern-1.png' %}">
     <p id = "modern-second-p">
         Город предлагает широкий спектр развлечений и познавательных экскурсий. Здесь вас ожидают морские прогулки под парусом, водные аттракционы, полеты на парашюте над морской гладью. В Таганроге вы найдете современные комфортабельные гостиницы, множество отличных ресторанов, кафе, лучшие из которых расположились в его историческом центре и на побережье, а также колоритные южные базары, где по очень привлекательным ценам продаются сочные фрукты, овощи, свежие, копченые, вяленые дары моря.
     </p>
-    <img id = "modern-second-img" src = "/history/static/history/img/images/modern-2.png" alt="">
-    <img id = "modern-third-img" src = "/history/static/history/img/images/modern-3.png" alt="">
+    <img id = "modern-second-img" src = "{% static 'history/img/images/modern-2.png' %}" alt="">
+    <img id = "modern-third-img" src = "{% static 'history/img/images/modern-3.png' %}" alt="">
 </div>
 
 
@@ -135,7 +135,7 @@
 <div id="last-block">
     <a id="first">Copyright (с) 2022 Eclipse</a>
     <a id="second">Telegram —     Vkontakte —     E-mail</a>
-    <img id="last-picture" src="/history/static/history/img/images/Full_Logo.svg" alt="">
+    <img id="last-picture" src="{% static 'history/img/images/Full_Logo.svg' %}" alt="">
 </div>
 
 </body>
