@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang = "ru">
 <head>
@@ -6,13 +7,13 @@
     <link rel="shortcut icon" href="{% static 'it/img/images/logo.png' %}" type="image/png">
     <title>TGNit</title>
     <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
-    <script type = "text/javascript" src = "{% 'it/js/scripts/menu.js' %}"></script>
+    <script type = "text/javascript" src = "{% static  'it/js/scripts/menu.js' %}"></script>
 </head>
 <body>
 
 <header id="header">
     <div id = "main-button">
-        <img src="/it/static/it/img/images/logo.png" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
+        <img src="{% static 'it/img/images/logo.png' %}" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
         <div class = "name">Таганрог</div>
     </div>
     <div id="menu"></div>
@@ -46,27 +47,27 @@
 <div id = "line-bef"></div>
 
 <div id = "oggetto">
-    <img id = "main-logo" src = "/it/static/it/img/images/oggetto.svg" alt="">
+    <img id = "main-logo" src = "{% static 'it/img/images/oggetto.svg' %}" alt="">
     <div id = "og-1">
-        <img class = "og-icon" alt="" src = "/it/static/it/img/images/og-1.svg">
+        <img class = "og-icon" alt="" src = "{% static 'it/img/images/og-1.svg' %}">
         <p>
             13 лет опыта на рынках России и зарубежья
         </p>
     </div>
     <div id = "og-2">
-        <img class = "og-icon"  alt="" src = "/it/static/it/img/images/og-2.svg">
+        <img class = "og-icon"  alt="" src = "{% static 'it/img/images/og-2.svg' %}">
         <p>
             1-й официальный партнер Magento в России
         </p>
     </div>
     <div id = "og-3">
-        <img class = "og-icon"  alt="" src = "/it/static/it/img/images/og-3.svg">
+        <img class = "og-icon"  alt="" src = "{% static 'it/img/images/og-3.svg' %}">
         <p>
             150+ человек в компании. Крупнейший собственный eCommerce production
         </p>
     </div>
     <div id = "og-4">
-        <img class = "og-icon"  alt="" src = "/it/static/it/img/images/og-4.svg">
+        <img class = "og-icon"  alt="" src = "{% static 'it/img/images/og-4.svg' %}">
         <p>
             Входит в ТОП-5 компаний России, создающих системы электронной коммерции для крупных клиентов.
         </p>
@@ -78,8 +79,8 @@
 <div id = "og-between"></div>
 
 <div id = "dunice">
-    <img id = "logo-d" src = "/it/static/it/img/images/dunice-logo.svg" alt="">
-    <img id = "side-photo" src = "/it/static/it/img/images/dunice-side.svg" alt="">
+    <img id = "logo-d" src = "{% static 'it/img/images/dunice-logo.svg' %}" alt="">
+    <img id = "side-photo" src = "{% static 'it/img/images/dunice-side.svg' %}" alt="">
     <h3>О компании</h3>
     <p>
         Занимается разработкой веб-сайтов 
@@ -100,8 +101,8 @@
 <div id = "af-dunice"></div>
 
 <div id = "inostudio">
-    <img id ="in-logo" src = "/it/static/it/img/images/for-inostudio.svg" alt="">
-    <img id = "f-in" src = "/it/static/it/img/images/Ellipse 11.svg" alt="">
+    <img id ="in-logo" src = "{% static 'it/img/images/for-inostudio.svg' %}" alt="">
+    <img id = "f-in" src = "{% static 'it/img/images/Ellipse 11.svg' %}" alt="">
     <p id = "in-img">
         Job-сайт для альфа-банка, социальная сеть для ученых
     </p>
@@ -117,7 +118,7 @@
 
 <div id = "umbrella">
     <div id = "um-head">
-        <img src = "/it/static/it/img/images/umbrella.svg" alt="">
+        <img src = "{% static 'it/img/images/umbrella.svg' %}" alt="">
     </div>
     <div id = "um-main">
         <div id = "f-line"></div>
@@ -149,7 +150,7 @@
     <p>
         Разработка приложений для стартапов, быстрорастущих компаний и бизнеса
     </p>
-    <img id = "pol-1" src = "/it/static/it/img/images/polygon-1.svg" alt="">
+    <img id = "pol-1" src = "{% static 'it/img/images/polygon-1.svg' %}" alt="">
     <form action="https://alpacait.com/" target = "_blank">
         <button id ="orange">КЛИЕНТУ</button>
     </form>
@@ -162,10 +163,10 @@
 
 <div id = "justice">
     <div id = "jus-head">
-        <img src = "/it/static/it/img/images/justice.svg" alt="">
+        <img src = "{% static 'it/img/images/justice.svg' %}" alt="">
     </div>
     <div id = "jus-main">
-        <img id = "back" src = "/it/static/it/img/images/for-justice.svg" alt = "">
+        <img id = "back" src = "{% static 'it/img/images/for-justice.svg' %}" alt = "">
         <div class = "j-block" id = "f-block">
             <div class = 'point' id = 'f'></div>
             <h3>СПЕЦИАЛИСТЫ</h3>
@@ -203,14 +204,14 @@
 
 
 <div id = "exceed">
-    <img id ="ex-logo" src = "/it/static/it/img/images/exceed-logo.svg" alt="">
+    <img id ="ex-logo" src = "{% static 'it/img/images/exceed-logo.svg' %}" alt="">
     <h2>О компании</h2>
     <p id = "ex-p">
         Компания занимается веб- и мобильной разработкой в области CRM-систем для бизнеса
     </p>
-    <img id = "ex-side" src = "/it/static/it/img/images/exceed-side.svg" alt="">
+    <img id = "ex-side" src = "{% static 'it/img/images/exceed-side.svg' %}" alt="">
     <div class = "exceed-block" id = "ex-first">
-        <img src = "/it/static/it/img/images/exceed-block.svg" alt = "">
+        <img src = "{% static 'it/img/images/exceed-block.svg' %}" alt = "">
         <p>
             Fullstack-разработка.
             Работа как с клиентс-
@@ -219,7 +220,7 @@
         </p>
     </div>
     <div class = "exceed-block" id = "ex-second">
-        <img src = "/it/static/it/img/images/exceed-block.svg" alt = "">
+        <img src = "{% static 'it/img/images/exceed-block.svg' %}" alt = "">
         <p>
             Нативная и кроссплат-
             форменная разработка
@@ -228,7 +229,7 @@
         </p>
     </div>
     <div class = "exceed-block" id = "ex-third">
-        <img src = "/it/static/it/img/images/exceed-block.svg" alt = "">
+        <img src = "{% static 'it/img/images/exceed-block.svg' %}" alt = "">
         <p>
             UX/UI Дизайн удобный
             для использования на
@@ -236,7 +237,7 @@
         </p>
     </div>
     <div class = "exceed-block" id = "ex-fourth">
-        <img src = "/it/static/it/img/images/exceed-block.svg" alt = "">
+        <img src = "{% static 'it/img/images/exceed-block.svg' %}" alt = "">
         <p>
             DEVOPS
             Используются лучшие
@@ -247,7 +248,7 @@
         </p>
     </div>
     <div class = "exceed-block" id = "ex-fifth">
-        <img src = "/it/static/it/img/images/exceed-block.svg" alt = "">
+        <img src = "{% static 'it/img/images/exceed-block.svg' %}" alt = "">
         <p>
             Тестирование
             Специалисты контро-
@@ -265,7 +266,7 @@
 
 
 <div id = "lachestry">
-    <img id = "lac-name" src = "/it/static/it/img/images/lachestry-name.svg" alt="">
+    <img id = "lac-name" src = "{% static 'it/img/images/lachestry-name.svg' %}" alt="">
     <img src = "/it/static/it/img/images/lac-logo.svg" id = "lac-logo" alt = "">
     <h2 id = "lac-h2">О компании</h2>
     <p id = "under-h2">
@@ -293,7 +294,7 @@
 <div id="last-block">
     <a id="first">Copyright (с) 2022 Eclipse</a>
     <a id="second">Vkontakte</a>
-    <img id="last-picture" src="/it/static/it/img/images/Full_Logo.svg">
+    <img id="last-picture" src="{% static 'it/img/images/Full_Logo.svg' %}">
 </div>
 </main>
 

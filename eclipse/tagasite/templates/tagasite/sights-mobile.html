@@ -1,14 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang = "ru">
 
 
 <head>
     <meta charset = "utf-8" name="viewport" content="initial-scale=1.0" width = "device-width">
-    <link rel = "stylesheet" href = "/attractions/static/attractions/css/sights-mobile.css">
-    <link rel="shortcut icon" href="/attractions/static/attractions/img/images/logo.png" type="image/png">
+    <link rel = "stylesheet" href = "{% static 'attractions/css/sights_mobile.css' %}">
+    <link rel="shortcut icon" href="{% static 'attractions/img/images/logo.png' %}" type="image/png">
     <title>TGNsights</title>
     <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
-    <script type = "text/javascript" src = "/attractions/static/attractions/js/scripts/menu.js"></script>
+    <script type = "text/javascript" src = "{% static 'attractions/js/scripts/menu.js' %}"></script>
 </head>
 
 
@@ -16,7 +17,7 @@
 
     <header id="header">
         <div id = "main-button">
-            <img src="/attractions/static/attractions/img/images/logo.png" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
+            <img src="{% static 'attractions/img/images/logo.png' %}" id="header-logo" width="130px" height="130px" onclick="document.location='/'"></img>
             <div class = "name">Таганрог</div>
         </div>
         <div id="menu"></div>
@@ -42,7 +43,7 @@
             <div class="slider-track">
                 <a href = "#lavka_Checkov">
                 <div class="slide">
-                    <img src="/attractions/static/attractions/img/images/muzej-lavka-chehovyh.jpg" width="1050px" height="1171px">
+                    <img src="{% static 'attractions/img/images/muzej-lavka-chehovyh.jpg' %}" width="1050px" height="1171px">
                     <div class="bg-bl-m">
                         <div class="bg-box">
                             <h1 class="bg-h">ЛАВКА ЧЕХОВА</h1>
@@ -52,7 +53,7 @@
                 </a>
                 <a href = "#art-museum">
                 <div class="slide">
-                    <img src="/attractions/static/attractions/img/images/art_museum.jpg" width="1050px" height="1171px">
+                    <img src="{% static 'attractions/img/images/art_museum.jpg' %}" width="1050px" height="1171px">
                     <div class="bg-bl-m">
                         <div class="bg-box">
                             <h1 id = "art_m" class="bg-h2">ХУДОЖЕСТВЕННЫЙ<br>МУЗЕЙ</h1>
@@ -62,7 +63,7 @@
                 </a>
                 <a href = "#alferaki_">
                 <div class="slide">
-                    <img src="/attractions/static/attractions/img/images/alferaki.jpg" width="1050px" height="1171px">
+                    <img src="{% static 'attractions/img/images/alferaki.jpg' %}" width="1050px" height="1171px">
                     <div class="bg-bl-m">
                         <div class="bg-box">
                             <h1 class="bg-h">ДВОРЕЦ АЛФЕРАКИ</h1>
@@ -72,7 +73,7 @@
                 </a>
                 <a href = "#Chechov_house">
                 <div class="slide">
-                    <img src="/attractions/static/attractions/img/images/Chekhov_house_Taganrog.jpg" width="1050px" height="1171px">
+                    <img src="{% static 'attractions/img/images/Chekhov_house_Taganrog.jpg' %}" width="1050px" height="1171px">
                     <div class="bg-bl-m">
                         <div class="bg-box">
                             <h1 class="bg-h">ДОМИК ЧЕХОВА</h1>
@@ -82,7 +83,7 @@
                 </a>
                 <a href = "#rows">
                 <div class="slide">
-                    <img src="/attractions/static/attractions/img/images/rows.jpg" width="1050px" height="1171px">
+                    <img src="{% static 'attractions/img/images/rows.jpg' %}" width="1050px" height="1171px">
                     <div class="bg-bl-m">
                         <div class="bg-box">
                             <h1 class="bg-h">ТОРГОВЫЕ РЯДЫ</h1>
@@ -92,7 +93,7 @@
                 </a>
                 <a href = "#al1_palace">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/al1palace.png" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/al1palace.png' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 id = "al_m" class="bg-h3">ДВОРЕЦ АЛЕКСАНДРА ПЕРВОГО</h1>
@@ -102,7 +103,7 @@
                 </a>
                 <a href = "#CheckovMonument">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/ChcchovMon.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/ChcchovMon.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ПАМЯТНИК А.&nbsp;П.&nbsp;ЧЕХОВУ</h1>
@@ -112,7 +113,7 @@
                 </a>
                 <a href = "#Sharonov_house">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/sharonov.png" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/sharonov.png' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h">ДОМ ШАРОНОВА</h1>
@@ -122,7 +123,7 @@
                 </a>
                 <a href = "#Chaykovskiy">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/Chaykovskiy.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/Chaykovskiy.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ДОМ-МУЗЕЙ ЧАЙКОВСКИХ</h1>
@@ -132,7 +133,7 @@
                 </a>
                 <a href = "#ladder">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/ladder.jpeg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/ladder.jpeg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">КАМЕННАЯ ЛЕСТНИЦА</h1>
@@ -142,7 +143,7 @@
                 </a>
                 <a href = "#lit">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/gimnasium.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/gimnasium.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h3">ЛИТЕРАТУРНЫЙ МУЗЕЙ ИМ.&nbsp;A.&nbsp;П.&nbsp;ЧЕХОВА</h1>
@@ -152,7 +153,7 @@
                 </a>
                 <a href = "#durov">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/durov.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/durov.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h">МУЗЕЙ А.&nbsp;А.&nbsp;ДУРОВА</h1>
@@ -162,7 +163,7 @@
                 </a>
                 <a href = "#vasilenko">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/vasilenko.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/vasilenko.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ДОМ-МУЗЕЙ И.&nbsp;Д.&nbsp;ВАСИЛЕНКО</h1>
@@ -172,7 +173,7 @@
                 </a>
                 <a href = "#ranevskaya">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/ranevskaya.png" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/ranevskaya.png' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">МУЗЕЙ ФАИНЫ РАНЕВСКОЙ</h1>
@@ -182,7 +183,7 @@
                 </a>
                 <a href = "#october">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/october.jpeg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/october.jpeg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ОКТЯБРЬСКАЯ ПЛОЩАДЬ</h1>
@@ -192,7 +193,7 @@
                 </a>
                 <a href = "#cherry">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/cherry.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/cherry.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h3">ПАМЯТНИК А.&nbsp;П.&nbsp;ЧЕХОВУ<br>«ВИШНЁВЫЙ САД»</h1>
@@ -202,7 +203,7 @@
                 </a>
                 <a href = "#garibaldy">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/garibaldi.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/garibaldi.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h3">ПАМЯТНИК ДЖУЗЕППЕ ГАРИБАЛЬДИ</h1>
@@ -212,7 +213,7 @@
                 </a>
                 <a href = "#alex">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/alex.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/alex.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ПАМЯТНИК АЛЕКСАНДРУ &#8544;</h1>
@@ -222,7 +223,7 @@
                 </a>
                 <a href = "#petr">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/petr.jpeg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/petr.jpeg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h">ПАМЯТНИК ПЕТРУ &#8544;</h1>
@@ -232,7 +233,7 @@
                 </a>
                 <a href = "#park">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/park.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/park.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 id = "park_m" class="bg-h3">ПАРК КУЛЬТУРЫ И ОТДЫХА ИМЕНИ ГОРЬКОГО</h1>
@@ -242,7 +243,7 @@
                 </a>
                 <a href = "#petrushino">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/petrushino.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/petrushino.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h">ПЕТРУШИНА КОСА</h1>
@@ -252,7 +253,7 @@
                 </a>
                 <a href = "#primor">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/primor.jpeg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/primor.jpeg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h">ПРИМОРСКИЙ ПАРК</h1>
@@ -262,7 +263,7 @@
                 </a>
                 <a href = "#naber">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/nabereznaya.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/nabereznaya.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ПУШКИНСКАЯ НАБЕРЕЖНАЯ</h1>
@@ -272,7 +273,7 @@
                 </a>
                 <a href = "#clocks">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/clocks.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/clocks.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h">СОЛНЕЧНЫЕ ЧАСЫ</h1>
@@ -282,7 +283,7 @@
                 </a>
                 <a href = "#aviation">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/aviation.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/aviation.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h">МУЗЕЙ АВИАЦИИ</h1>
@@ -292,7 +293,7 @@
                 </a>
                 <a href = "#Hram">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/Hram.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/Hram.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ЦЕРКОВЬ ВСЕХ СВЯТЫХ</h1>
@@ -302,7 +303,7 @@
                 </a>
                 <a href = "#Hram_Nicolay">
                     <div class="slide">
-                        <img src="/attractions/static/attractions/img/images/Hram_Nicolay.jpg" width="1050px" height="1171px">
+                        <img src="{% static 'attractions/img/images/Hram_Nicolay.jpg' %}" width="1050px" height="1171px">
                         <div class="bg-bl-m">
                             <div class="bg-box">
                                 <h1 class="bg-h2">ЦЕРКОВЬ НИКОЛАЯ ЧУДОТВОРЦА</h1>
@@ -325,7 +326,7 @@
 <div class = "sight" id = "rows">
     <div class = "line-sight"></div>
     <h3>АЛЕКСАНДРОВСКИЕ ТОРГОВЫЕ РЯДЫ</h3>
-    <img src = "/attractions/static/attractions/img/images/rows.svg">
+    <img src = "{% static 'attractions/img/images/rows.svg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Александровские торговые ряды</font> — памятник архитектуры русского классицизма, единственное сооружение такого типа на Юге России. 
                     <br>
@@ -339,7 +340,7 @@
 <div class = "sight" id = "al1_palace">
     <div class = "line-sight"></div>
     <h3>ДВОРЕЦ АЛЕКСАНДРА ПЕРВОГО</h3>
-    <img src = "/attractions/static/attractions/img/images/palace.jpg">
+    <img src = "{% static 'attractions/img/images/palace.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Дворец Александра I</font> ― один из памятников истории и архитектуры Таганрога.
         <br>
@@ -353,7 +354,7 @@
 <div class = "sight" id = "alferaki_">
     <div class = "line-sight"></div>
     <h3>ДВОРЕЦ АЛФЕРАКИ</h3>
-    <img src = "/attractions/static/attractions/img/images/alferaki.jpg">
+    <img src = "{% static 'attractions/img/images/alferaki.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Дворец Алфераки</font> — архитектурный памятник федерального значения. Здание построено в 1848 году.
                     <br>
@@ -367,7 +368,7 @@
 <div class = "sight" id = "CheckovMonument">
     <div class = "line-sight"></div>
     <h3>ПАМЯТНИК А.&nbsp;П.&nbsp;ЧЕХОВУ</h3>
-    <img src = "/attractions/static/attractions/img/images/ChcchovMon.jpg">
+    <img src = "{% static 'attractions/img/images/ChcchovMon.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Дворец Алфераки</font> — архитектурный памятник федерального значения. Здание построено в 1848 году.
         &emsp;<font color = "#E0AB4D">Памятник А.&nbsp;П.&nbsp;Чехову</font> — был подготовлен скульптором Иулианом Рукавишниковым. Памятник появился в Таганроге в 1960 году, в дни празднования 100-летия со дня рождения знаменитого писателя. Примечательно, что в выборе внешнего вида проекта участвовали жители Таганрога. Четыре лучших работы были выставлены в краеведческом музее, посетители оставляли свои впечатления и мнения в книге отзывов. На торжественное открытие пришло много людей, среди них был и сам И.&nbsp;М.&nbsp;Рукавишников.
@@ -380,7 +381,7 @@
 <div class = "sight" id = "art_museum">
     <div class = "line-sight"></div>
     <h3>ХУДОЖЕСТВЕННЫЙ МУЗЕЙ</h3>
-    <img src = "/attractions/static/attractions/img/images/art_museum.jpg">
+    <img src = "{% static 'attractions/img/images/art_museum.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Таганрогский художественный музей</font> — музей в Таганроге, основанный в 1898 году, к 200-летию города.
         <br>
@@ -394,7 +395,7 @@
 <div class = "sight" id = "lavka_Checkov">
     <div class = "line-sight"></div>
     <h3>ЛАВКА ЧЕХОВЫХ</h3>
-    <img src = "/attractions/static/attractions/img/images/muzej-lavka-chehovyh.jpg">
+    <img src = "{% static 'attractions/img/images/muzej-lavka-chehovyh.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Лавка Чехова</font> - музей, открытый в 1977 году
         <br>
@@ -408,7 +409,7 @@
 <div class = "sight" id = "Sharonov_house">
     <div class = "line-sight"></div>
     <h3>ДОМ ШАРОНОВА</h3>
-    <img src = "/attractions/static/attractions/img/images/sharonov.png">
+    <img src = "{% static 'attractions/img/images/sharonov.png' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Лавка Чехова</font> - музей, открытый в 1977 году
         <br>
@@ -422,7 +423,7 @@
 <div class = "sight" id = "Chaykovskiy">
     <div class = "line-sight"></div>
     <h3>ДОМ-МУЗЕЙ ЧАЙКОВСКИХ</h3>
-    <img src = "/attractions/static/attractions/img/images/Chaykovskiy.jpg">
+    <img src = "{% static 'attractions/img/images/Chaykovskiy.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Дом</font> принадлежал брату великого композитора Петра Ильича Чайковского. Он был спроектирован архитектором М.&nbsp;П.&nbsp;Петровым по заказу подполковника Войска Донского Д.&nbsp;Г.&nbsp;Калиновского, который, по легенде, потом проиграл данный дом в карты. Это строение из красного кирпича, украшенное узнаваемой зубчатой башней со шпилем, памятник архитектуры 1870-х годов.
                     <br>
@@ -434,7 +435,7 @@
 <div class = "sight" id = "Chechov_house">
     <div class = "line-sight"></div>
     <h3>ДОМИК ЧЕХОВА</h3>
-    <img src = "/attractions/static/attractions/img/images/Chekhov_house_Taganrog.jpg">
+    <img src = "{% static 'attractions/img/images/Chekhov_house_Taganrog.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Домик Чехова</font> является важной достопримечательностью Таганрога. Это небольшой флигель общей площадью всего 30,5 м². Семья проживала в нем с 1859 по 1861 год. Именно в этом месте в 1860-м году был рожден известный русский писатель А.&nbsp;П.&nbsp;Чехов. Главу семейства, скорее всего, привлекало близкое расположение его лавки с бакалейными товарами. 
         <br>
@@ -446,7 +447,7 @@
 <div class = "sight" id = "ladder">
     <div class = "line-sight"></div>
     <h3>КАМЕННАЯ ЛЕСТНИЦА</h3>
-    <img src = "/attractions/static/attractions/img/images/ladder.jpeg">
+    <img src = "{% static 'attractions/img/images/ladder.jpeg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Каменная лестница</font> является одной из самых посещаемых достопримечательностей нашего города. Мало того, что она сама по себе является примечательным архитектурным объектом, вид с её вершины не оставит никого равнодушным.
         <br>
@@ -460,7 +461,7 @@
 <div class = "sight" id = "lit">
     <div class = "line-sight"></div>
     <h3>ЛИТЕРАТУРНЫЙ МУЗЕЙ ИМ.&nbsp;A.&nbsp;П.&nbsp;ЧЕХОВА</h3>
-    <img src = "/attractions/static/attractions/img/images/gimnasium.jpg">
+    <img src = "{% static 'attractions/img/images/gimnasium.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Литературный музей им.&nbsp;А.&nbsp;П.&nbsp;Чехова</font> - Музей расположен в здании бывшей мужской классической гимназии, в которой 11 лет провел А.&nbsp;П.&nbsp;Чехов. Здесь писатель вдохновился для написания рассказов «И то и се», «Репетитор», «Человек в футляре».
         <br>
@@ -474,7 +475,7 @@
 <div class = "sight" id = "durov">
     <div class = "line-sight"></div>
     <h3>МУЗЕЙ А.&nbsp;А.&nbsp;ДУРОВА</h3>
-    <img src = "/attractions/static/attractions/img/images/durov.jpg">
+    <img src = "{% static 'attractions/img/images/durov.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Музей циркового искусства</font>, посвященный прославленному дрессировщику А.&nbsp;А.&nbsp;Дурову. 
         <br>
@@ -488,7 +489,7 @@
 <div class = "sight" id = "vasilenko">
     <div class = "line-sight"></div>
     <h3>ДОМ-МУЗЕЙ И.&nbsp;Д.&nbsp;ВАСИЛЕНКО</h3>
-    <img src = "/attractions/static/attractions/img/images/vasilenko.jpg">
+    <img src = "{% static 'attractions/img/images/vasilenko.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Дом-музей писателя И.&nbsp;Д.&nbsp;Василенко</font> расположен в доме, в котором с 1923 по 1966 год жил И.&nbsp;Д.&nbsp;Василенко. 
         <br>
@@ -502,7 +503,7 @@
 <div class = "sight" id = "ranevskaya">
     <div class = "line-sight"></div>
     <h3>МУЗЕЙ ФАИНЫ РАНЕВСКОЙ</h3>
-    <img src = "/attractions/static/attractions/img/images/ranevskaya.png">
+    <img src = "{% static 'attractions/img/images/ranevskaya.png' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Музей Фаины Раневской</font> - музей, планирующийся к открытию в Таганроге с 1987 года. Последний раз открытие музея планировалось в 2017 году[1].
         <br>
@@ -512,7 +513,7 @@
 <div class = "sight" id = "october">
     <div class = "line-sight"></div>
     <h3>ОКТЯБРЬСКАЯ ПЛОЩАДЬ</h3>
-    <img src = "/attractions/static/attractions/img/images/october.jpeg">
+    <img src = "{% static 'attractions/img/images/october.jpeg' %}">
     <p>
         &emsp;Название <font color = "#E0AB4D">Октябрьская площадь</font> Название «Октябрьская площадь» было присвоено площади в 1952 году. В те же времена была проведена обширная реконструкция перед установкой памятника В.&nbsp;И.&nbsp;Ленину в 1970 году. 
         <br>
@@ -524,7 +525,7 @@
 <div class = "sight" id = "cherry">
     <div class = "line-sight"></div>
     <h3>ПАМЯТНИК А.&nbsp;П.&nbsp;ЧЕХОВУ<br>«ВИШНЁВЫЙ САД»</h3>
-    <img src = "/attractions/static/attractions/img/images/cherry.jpg">
+    <img src = "{% static 'attractions/img/images/cherry.jpg' %}">
     <p>
         &emsp;Автором памятника является ростовский скульптор Д.&nbsp;В.&nbsp;Лындин. Памятник появился на Чеховской набережной в преддверии 150-летнего юбилея писателя. Поблизости расположен санаторий-профилакторий «Тополь» и гостиница «Приазовье». Открытие памятника состоялось в октябре 2009 года.
         <br>
@@ -536,7 +537,7 @@
 <div class = "sight" id = "garibaldy">
     <div class = "line-sight"></div>
     <h3>ПАМЯТНИК ДЖУЗЕППЕ ГАРИБАЛЬДИ</h3>
-    <img src = "/attractions/static/attractions/img/images/garibaldi.jpg">
+    <img src = "{% static 'attractions/img/images/garibaldi.jpg' %}">
     <p>
         &emsp;В честь <font color = "#E0AB4D">Гарибальди</font> в районе порта, где однажды стояла его шхуна «Клоринда», был установлен обелиск. Именно в Таганроге итальянский революционер встретил единомышленников и поклялся посвятить свою жизнь освобождению и воссоединению своей Родины. Джузеппе смог достичь своей цели, чем и прославился на весь мир
         <br>
@@ -548,7 +549,7 @@
 <div class = "sight" id = "alex">
     <div class = "line-sight"></div>
     <h3>ПАМЯТНИК АЛЕКСАНДРУ &#8544;</h3>
-    <img src = "/attractions/static/attractions/img/images/alex.jpg">
+    <img src = "{% static 'attractions/img/images/alex.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Памятник российскому императору Александру 1</font> был установлен в 1831 году. Это первый памятник в истории Таганрога.
         <br>
@@ -560,7 +561,7 @@
 <div class = "sight" id = "petr">
     <div class = "line-sight"></div>
     <h3>ПАМЯТНИК ПЕТРУ &#8544;</h3>
-    <img src = "/attractions/static/attractions/img/images/petr.jpeg">
+    <img src = "{% static 'attractions/img/images/petr.jpeg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Памятник российскому императору Петру I Великому</font>  работы скульптора М.&nbsp;М.&nbsp;Антокольского, установленный в Таганроге в 1903 году. Последний сохранившийся полноразмерный экземпляр, отлитый под непосредственным руководством автора.
                     <br>
@@ -574,7 +575,7 @@
 <div class = "sight" id = "park">
     <div class = "line-sight"></div>
     <h3>ПАРК КУЛЬТУРЫ И ОТДЫХА ИМЕНИ ГОРЬКОГО</h3>
-    <img src = "/attractions/static/attractions/img/images/park.jpg">
+    <img src = "{% static 'attractions/img/images/park.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Городской парк, расположенный в центре города.</font> Это большой парк, в котором можно как и неспешно прогуляться по зеленым аллеям, так и активно провести время на аттракционах или в тире. На центральном входе располагается высокая запоминающаяся арка, через которую в глубине парка можно увидеть Вечный огонь. Также в парке расположен шахматно-шашечный павильон, в котором любой желающий может провести время за игрой. На территории расположен живой уголок.
         <br>
@@ -586,7 +587,7 @@
 <div class = "sight" id = "petruchino">
     <div class = "line-sight"></div>
     <h3>ПЕТРУШИНА КОСА</h3>
-    <img src = "/attractions/static/attractions/img/images/petrushino.jpg">
+    <img src = "{% static 'attractions/img/images/petrushino.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Петрушина коса</font> - Это небольшая узкая песчаная коса, расположенная в Таганрогском заливе, примерно в 25 км к востоку от Беглицкой косы. Длина этой косы едва превышает 200 м. Сейчас здесь отдыхают местные жители и туристы. 
         <br>
@@ -598,7 +599,7 @@
 <div class = "sight" id = "primor">
     <div class = "line-sight"></div>
     <h3>ПРИМОРСКИЙ ПАРК</h3>
-    <img src = "/attractions/static/attractions/img/images/primor.jpeg">
+    <img src = "{% static 'attractions/img/images/primor.jpeg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Приморский парк</font> появился в Таганроге в начале 1960-х годов. Это просторный, преимущественно прогулочный парк. На территории обустроено большое количество лавочек, среди них есть и те, которые специально спроектированы для лежания. Также была оборудована большая спортивная площадка, включающая в себя футбольное, баскетбольное поле, зону с турниками, брусьями и проч. Посетителям с детьми понравится современная детская площадка и аттракционы
         <br>
@@ -610,7 +611,7 @@
 <div class = "sight" id = "naber">
     <div class = "line-sight"></div>
     <h3>ПУШКИНСКАЯ НАБЕРЕЖНАЯ</h3>
-    <img src = "/attractions/static/attractions/img/images/nabereznaya.jpg">
+    <img src = "{% static 'attractions/img/images/nabereznaya.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Пушкинская набережная</font> - старейшая набережная в Таганроге, появившаяся в городском плане еще в 1808 году. 
         <br>
@@ -624,7 +625,7 @@
 <div class = "sight" id = "clocks">
     <div class = "line-sight"></div>
     <h3>СОЛНЕЧНЫЕ ЧАСЫ</h3>
-    <img src = "/attractions/static/attractions/img/images/clocks.jpg">
+    <img src = "{% static 'attractions/img/images/clocks.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Солнечные часы</font> часы были установлены в Таганроге в 1833 году. Они реконструировались в 1972-м, 1990-м, и в 2006–2007 годах. 
         <br>
@@ -636,7 +637,7 @@
 <div class = "sight" id = "aviation">
     <div class = "line-sight"></div>
     <h3>МУЗЕЙ АВИАЦИИ</h3>
-    <img src = "/attractions/static/attractions/img/images/aviation.jpg">
+    <img src = "{% static 'attractions/img/images/aviation.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Таганрогский музей авиационной техники</font> был основан в 1995 г. Его появление связано с заключением в этот период договора об ограничении вооруженных сил России в Европе, военные самолеты пришлось сокращать. Было решено уничтожать технику в Таганроге, но главный инженер базы по ликвидации предложил сохранить хотя бы по одному самолету каждого типа. Естественно, без двигателей и бортовых систем. Идею поддержало руководство, и первым хранителем музея стал этот инженер, подполковник В. Стоянов. 
         <br>
@@ -648,7 +649,7 @@
 <div class = "sight" id = "Hram">
     <div class = "line-sight"></div>
     <h3>ЦЕРКОВЬ ВСЕХ СВЯТЫХ</h3>
-    <img src = "/attractions/static/attractions/img/images/Hram.jpg">
+    <img src = "{% static 'attractions/img/images/Hram.jpg' %}">
     <p>
         &emsp;<font color = "#E0AB4D">Церковь Всех Святых</font> - был заложен в 1810 году. Стройка затянулась, и храм был готов только к 1824 году. Известно, что в 1826 году вдовствующая императрица Елизавета Алексеевна пожертвовала деньги на построение этой церкви. 
                     <br>
@@ -660,7 +661,7 @@
 <div class = "sight" id = "Hram_Nicolay">
     <div class = "line-sight"></div>
     <h3>ЦЕРКОВЬ НИКОЛАЯ ЧУДОТВОРЦА</h3>
-    <img src = "/attractions/static/attractions/img/images/Hram_Nicolay.jpg">
+    <img src = "{% static 'attractions/img/images/Hram_Nicolay.jpg' %}">
     <p>
         &emsp;Строительство <font color = "#E0AB4D">храма</font> пришлось на 1777–1778 года. Храм был построен моряками, а прихожанами по большей части были рыбаки. По городской легенде, место для храма было выбрано на том месте, где располагалась палатка Петра Первого, когда он впервые прибыл в Таганрог.
         <br>
@@ -677,7 +678,7 @@
 <div id="last-block">
     <a id="first">Copyright (с) 2022 Eclipse</a>
     <a id="second">Facebook —     Vkontakte —     Instagram</a>
-    <img id="last-picture" src="/attractions/static/attractions/img/images/Full_Logo.svg">
+    <img id="last-picture" src="{% static 'attractions/img/images/Full_Logo.svg' %}">
 </div>
 
 <script>
