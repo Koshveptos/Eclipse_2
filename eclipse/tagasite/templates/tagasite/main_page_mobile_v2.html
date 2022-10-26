@@ -149,7 +149,7 @@
     <img id="f5" src="{% static 'tagasite/img/sourse/Foto%208.png' %}">
 </div>
 
-<div id="qt-m">
+<!--<div id="qt-m">
     <img id="qt-img" src="{% static 'tagasite/img/sourse/image3_m.png' %}" width="1050px" height="500">
     <h2 id="qust-m">ЗАИНТЕРЕСОВАЛИ?</h2>
     <div id="yes-m">
@@ -158,7 +158,7 @@
     <div id="no-m">
         <a id="no-txt-m">НЕТ</a>
     </div>
-</div>
+</div>-->
 
 <div id="feedback-m">
 
@@ -215,7 +215,7 @@
     <form action="" method="POST" class="form-contact contact_form">
      {% csrf_token %}
             {% if success %}
-            <div class="alert alert-damage" >
+            <div class="alert alert-damage" id="tnx-message">
                 <strong>Спасибо за сообщение!</strong>
             </div>
         {% else %}
@@ -243,18 +243,18 @@
                     </div>
                 </div>
 
-                <div>
+                <div id="msg-v2">
                     {% if form.message.errors %}
                     <div class="alert alert-danger" >
                         <strong>{{form.message.errors}}</strong>
                     </div>
                     {% endif %}
-                    <div class="form-group">
+                    <div class="form-group" id="dop">
                         {{ form.message }}
                     </div>
                 </div>
             </div>
-        <button id="send-txt"
+        <button id="send-txt-v2"
       type="submit" >Отправить
         </button>
 

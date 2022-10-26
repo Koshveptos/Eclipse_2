@@ -10,7 +10,7 @@ body{
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('..img/fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    src: url('../img/fonts/Montserrat-VariableFont_wght.ttf') format('woff');
     /*    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff');*/
 }
 
@@ -975,14 +975,14 @@ body{
     width: 910px;
     left: 20px;
     height: 500px;
-    top: 5644px;
+    top: 5244px;
     /*background-color: green;*/
 }
 #fb-h{
     position: absolute;
     width: 592px;
     height: 40px;
-    left: 280px;
+    left: 230px;
     top: -85px;
 
     /* h2 */
@@ -1190,9 +1190,10 @@ body{
 #ur-msg{
     position: absolute;
     width: 850px;
-    height: 292px;
+    height: 230px;
     left: 0px;
     top: 238px;
+    resize: none;
 
     /* p */
 
@@ -1242,12 +1243,46 @@ body{
     border: 10px red;
 }
 
+#send-txt-v2{
+    position: absolute;
+    top: 590px;
+    left: 350px;
+    padding: 50px;
+    border: 0;
+    background: #D1A954;
+    color: #FFFFFF;
+    cursor: pointer;
+    /*background: red;*/
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 135%;
+    /* identical to box height, or 22px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+#msg-v2{
+    position: absolute;
+    top: 50px;
+    resize: none;
+}
+
+#dop{
+    resize: none;
+}
+
 #send-txt{
     position: absolute;
     width: 111px;
     height: 22px;
     top: 55px;
     left: 36px;
+    background: red;
 
     /* h3 */
 
@@ -1282,7 +1317,7 @@ input{
     width: 1050px;
     height: 425px;
     left: 0px;
-    top: 6411px;
+    top: 6111px;
     background: #F9F7F7;
 }
 
@@ -1376,10 +1411,31 @@ input{
     width: 1050px;
     height: 137px;
     left: 0px;
-    top: 6720px;
+    top: 6420px;
 
     /*background: #C4C4C4;*/
 }
+
+#tnx-message{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    /*background: red;*/
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 145%;
+    /* or 52px */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
 #first{
     position: absolute;
     width: 319px;
