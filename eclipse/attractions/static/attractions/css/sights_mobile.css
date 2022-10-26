@@ -16,7 +16,7 @@ body{
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('imgfonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    src: url('..img/fonts/Montserrat-VariableFont_wght.ttf') format('woff');
 }
 
 * {

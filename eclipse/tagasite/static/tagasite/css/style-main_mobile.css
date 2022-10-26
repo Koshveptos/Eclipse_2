@@ -10,7 +10,7 @@ body{
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/tagasite/static/tagasite/img/fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    src: url('..img/fonts/Montserrat-VariableFont_wght.ttf') format('woff');
     /*    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff');*/
 }
 
