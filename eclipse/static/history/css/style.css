@@ -1,0 +1,644 @@
+html{
+    width: 100%;
+    max-width: 100%;
+    zoom: 90%;
+}
+
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    height: 4200px;
+    background: #FFFFFF;
+    /*background-color: grey;*/
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+}
+
+
+/* шапка сайта */
+#header-main{
+    z-index: 99999;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    height: 80px;
+    width: 90%;
+}
+
+#logo{
+    position: absolute;
+    top: -20px;
+    left: 340px;
+    width: 159px;
+    height: 161px;
+}
+
+#name{
+    position: absolute;
+    width: 172.45px;
+    height: 18.15px;
+    left: 762.03px;
+    top: 30px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* Accent */
+
+    color: #D1A954;
+}
+
+#reviews{
+    position: absolute;
+    width: 73.26px;
+    height: 18.15px;
+    left: 1381.94px;
+    top: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+#IT{
+    position: absolute;
+    width: 136.38px;
+    height: 18.15px;
+    left: 1226.67px;
+    top: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+#Attraction{
+    position: absolute;
+    width: 244.58px;
+    height: 18.15px;
+    left: 962.66px;
+    top: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+#main-menu{
+
+    position: absolute;
+    width: 99.19px;
+    height: 32.9px;
+    left: 634px;
+    top: 22px;
+    cursor: pointer;
+    border: 1px solid rgba(209, 169, 84, 0.9);
+    box-sizing: border-box;
+}
+
+#drop-menu{
+    position: absolute;
+    left: 1580px;
+    top: 30px;
+    width: 40px;
+    /*background-color: red;*/
+    height: 20px;
+    cursor: pointer;
+}
+
+#url-main{
+    position: absolute;
+    width: 99px;
+    height: 18.15px;
+    left: 633.81px;
+    top: 30px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* Accent */
+
+    color: #D1A954;
+
+}
+#first-line{
+    position: absolute;
+    width: 39.74px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+#second-line{
+    position: absolute;
+    width: 39.74px;
+    height: 0px;
+    top: 10px;
+
+    border: 1px solid #000000;
+}
+#third-line{
+    top: 20px;
+    position: absolute;
+    width: 39.74px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+#ext{
+    position: absolute;
+    width: 158.94px;
+    height: 161px;
+    left: 284px;
+    top: 64px;
+}
+
+
+
+/*scrollbar*/
+body::-webkit-scrollbar {
+    width: 20px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #faf0e2;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-track {
+    margin-top: 0px; /* отступ от начала страницы*/
+    margin-bottom: px; /*отступ от конца страницы*/
+}
+  body::-webkit-scrollbar-thumb {
+    background-color: #D1A954;    /* цвет плашки */
+    border-radius: 10px;       /* закругления плашки */
+  }
+
+
+/*фотографии перед линией*/
+#before-line{
+    position:absolute;
+    width:1352px;
+    height:300px;
+    top:-50px;
+    left:284px;
+}
+
+
+/*линия под фотографиями*/
+#after-head{
+    top:200px;
+    position:absolute;
+}
+#first-p{
+    left:410px;
+    font-size: 24px;
+    text-align: center;
+    position:absolute;
+    top: 340px;
+}
+#second-p{
+    left:868px;
+    font-size: 24px;
+    text-align: center;
+    position:absolute;
+    top: 340px;
+}
+#third-p{
+    left:1276px;
+    font-size: 24px;
+    text-align: center;
+    position:absolute;
+    top: 340px;
+}
+#circle_one{
+    position:absolute;
+    top:293px;
+    width: 45px; 
+    height: 45px;
+    left: 470px;
+    background: #D1A954;
+    border-radius: 50%;
+}
+#circle_two{
+    position:absolute;
+    top:293px;
+    width: 45px; 
+    height: 45px;
+    left: 908px;
+    background: #D1A954;
+    border-radius: 50%;
+}
+#circle_three{
+    position:absolute;
+    top:293px;
+    width: 45px; 
+    height: 45px;
+    left: 1346px;
+    background: #D1A954;
+    border-radius: 50%;
+}
+#strelka{
+    width: 15px;
+    height: 15px;
+    border-top: 8px solid #D1A954;
+    border-right: 8px solid #D1A954;
+    transform: rotate(45deg);
+    display: inline-block;
+    left:1610px;
+    top:299px;
+    position:absolute;
+}
+#line{
+    border-top:8px solid #D1A954;
+    width:1352px;
+    position: absolute;
+    top: 310px;
+    left: 284px;
+}
+
+
+/*История основания города*/
+#inside-1{
+    left:88px;
+    height:970px;
+    width:1751px;
+    background-color:#F9F7F7;
+    top:80px;
+    position:relative;
+}
+#founding{
+    position:absolute;
+    top:640px;
+    height:971px;
+}
+#founding h2{
+    position:absolute;
+    width:683px;
+    height:72px;
+    font-size:36px;
+    top: 15px;
+    left: 180px;
+}
+#foundation-p1{
+    position:absolute;
+    text-align: left;
+    width:800px;
+    height:414px;
+    left: 100px;
+    font-size:21px;
+    top:80px;
+}
+#founding-pic1{
+    position:absolute;
+    width:770px;
+    height:493px;
+    left:1070px;
+    top:15px;
+}
+#founding-pic2{
+    position:absolute;
+    width:770px;
+    height:493px;
+    left:81px;
+    top:600px;
+}
+#foundation-p2{
+    position:absolute;
+    font-size:21px;
+    width:779px;
+    height:457px;
+    left:1000px;
+    top:550px;
+}
+
+
+
+/*История развития города*/
+#inside-2{
+    position:relative;
+    top:1860px;
+    width:1500px;
+    left:200px;
+    height: 480px;
+    background-color:#F9F7F7;
+}
+#development{
+    /*background-color:;*/
+    height:1190px;
+}
+#development h2{
+    position:absolute;
+    top:1800px;
+    font-size:36px;
+    left:180px;
+    height:72px;
+    width:800px;
+}
+#development p{
+    position:absolute;
+    width:1440px;
+    height:383px;
+    font-size:21px;
+    left:240px;
+    top:1865px;
+}
+#development-1{
+    position:absolute;
+    width:557px;
+    height:360px;
+    top:2478px;
+    left:81px;
+}
+#development-2{
+    position:absolute;
+    width:617px;
+    height:291px;
+    top:2383px;
+    left:641px;
+}
+#development-3{
+    position:absolute;
+    width:617px;
+    height:291px;
+    top:2678px;
+    left:641px;
+}
+#development-4{
+    position:absolute;
+    width:579px;
+    height:374px;
+    top:2464px;
+    left:1261px;
+}
+
+
+/*Современный Таганрог*/
+#inside-3{
+    position:relative;
+    width:1751px;
+    left:65px;
+    height:820px;
+    background-color:#F9F7F7;
+    top:1900px;
+}
+#modern h2{
+    position: absolute;
+    font-size:36px;
+    width:555px;
+    height:72px;
+    top:3030px;
+    left:180px;
+}
+#modern-p1{
+    position:absolute;
+    font-size:21px;
+    width:800px;
+    height:269px;
+    left:80px;
+    top:3100px;
+}
+#modern-p2{
+    position:absolute;
+    font-size:21px;
+    width:721px;
+    height:182px;
+    left:1000px;
+    top:3650px;
+}
+#modern-2{
+    position:absolute;
+    width:384px;
+    height:556px;
+    left:1000px;
+    top:3030px;
+}
+#modern-3{
+    position:absolute;
+    width:384px;
+    height:556px;
+    left:1450px;
+    top:3030px;
+}
+#modern-1{
+    position:absolute;
+    height:483px;
+    width:811px;
+    left:100px;
+    top:3440px;
+}
+
+
+
+
+/* copyright и т.п. */
+#last-block{
+    position: absolute;
+    width: 1900px;
+    height: 137px;
+    left: 0px;
+    top: 4210px;
+    margin-top:20px;
+}
+
+#first{
+    position: absolute;
+    width: 319px;
+    height: 15px;
+    left: 330px;
+    top: 78px;
+
+    /* p */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 135%;
+
+
+    color: #000000;
+}
+
+#second{
+    position: absolute;
+    width: 350px;
+    height: 15px;
+    left: 1330px;
+    top: 68px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 135%;
+
+    text-align: right;
+
+    color: #000000;
+}
+
+#third{
+    position: absolute;
+    width: 261px;
+    height: 15px;
+    left: 1390px;
+    top: 88px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 135%;
+
+    text-align: center;
+    text-decoration:none;
+
+    color: #000000;
+}
+
+#last-picture{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 810px;
+    top: 15px;
+}
+
+
+/* ждём в гости... */
+#welcome{
+    position: absolute;
+    width: 1900px;
+    height: 200px;
+    left: 0px;
+    top: 3943px;
+    background: #F9F7F7;
+}
+
+#w-h{
+    position: absolute;
+    width: 437px;
+    height: 52px;
+    left: 743px;
+    top: 50px;
+
+    /* h2 */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 145%;
+    /* or 52px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #222222;
+}
+
+#w-a{
+    position: absolute;
+    width: 58px;
+    height: 11px;
+    left: 931px;
+    top: 180px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 11px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.w-f{
+    position: absolute;
+    width: 310px;
+    height: 301px;
+}
+
+#w-logo{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 942px;
+    margin-top:20px;
+}
+
+#w-f1{
+    left: -10px;
+    margin-top: 10px;
+}
+
+#w-f2{
+    left: 310px;
+    margin-top: 10px;
+}
+
+#w-f3{
+    left: 629px;
+    margin-top: 10px;
+}
+
+#w-f4{
+    left: 940px;
+    margin-top: 10px;
+}
+
+#w-f5{
+    left: 1260px;
+    margin-top: 10px;
+}
+
+#w-f6{
+    left: 1580px;
+    margin-top: 10px;
+}
+
+.wid-f{
+    position: absolute;
+    height: 301px;
+    width: 320px;
+}
+

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "../slyles/second-slider.css">
+    <link rel="shortcut icon" href="../sourse/logo.png" type="image/png">
+    <title>TGNsite</title>
+    <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    if (screen.width <= 480) {
+        window.location = "http://tgnsite.ru.xsph.ru/page/main_page_mobile.html";
+    }
+</script>
+
+
+<div id="big-block">
+<div id="carousel" class="carousel">
+    <div class="gallery">
+        <ul>
+            <li>
+                <div class="bg-block" onclick="cf1()">
+                    <img src="../img/1.svg" style="">
+                    <a class="bg-txt">КАФЕДРА<br>БИТ</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf2()">
+                    <img src="../img/2.svg" style="">
+                    <a class="bg-txt">КАФЕДРА ВЫСШЕЙ<br>МАТЕМАТИКИ</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf3()">
+                    <img src="../img/3.svg" style="">
+                    <a class="bg-txt">КАФЕДРА ВЫЧИСЛ.<br>ТЕХНИКИ</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf4()">
+                    <img src="../img/4.svg" style="">
+                    <a class="bg-txt">КАФЕДРА<br>ИМС</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf5()">
+                    <img src="../img/5.svg" style="">
+                    <a class="bg-txt">КАФЕДРА ИАСБ<br>им Берштейна Л.С.</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf6()">
+                    <img src="../img/6.svg" style="">
+                    <a class="bg-txt">КАФЕДРА<br>ИБТС</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf7()">
+                    <img src="../img/7.svg" style="">
+                    <a class="bg-txt">КАФЕДРА<br>МОП ЭВМ</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf8()">
+                    <img src="../img/8.svg" style="">
+                    <a class="bg-txt">КАФЕДРА<br>ПСИХОЛОГИИ</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf9()">
+                    <img src="../img/9.svg" style="">
+                    <a class="bg-txt">КАФЕДРА СПУ<br>им. Колесникова А.А.</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf10()">
+                    <img src="../img/10.svg" style="">
+                    <a class="bg-txt">КАФЕДРА<br>САП</a>
+                </div>
+            </li>
+            <li>
+                <div class="bg-block" onclick="cf11()">
+                    <img src="../img/11.svg" style="">
+                    <a class="bg-txt">КАФЕДРА<br>САТ</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="button-prev">
+        <div id="l-button-top"></div>
+        <div id="l-button-bot"></div>
+    </div>
+    <div class="button-next">
+        <div id="r-button-top"></div>
+        <div id="r-button-bot"></div>
+    </div>
+</div>
+<div id="all-in">
+    <div class="cafedra" id="cf1" style="display: block">
+        <img src="../img/1.svg">
+        <a class="cfd-h">КАФЕДРА БИТ</a>
+        <a class="cfd-a">ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА ФАКУЛЬТЕТ МЕНЕДЖМЕНТА </a>
+    </div>
+    <div class="cafedra" id="cf2">
+        <img src="../img/2.svg">
+        <a class="cfd-h">КАФЕДРА ВЫСШЕЙ МАТЕМАТИКИ</a>
+        <a class="cfd-a">БЛОК №2</a>
+    </div>
+    <div class="cafedra" id="cf3">
+        <img src="../img/3.svg">
+        <a class="cfd-h">КАФЕДРА ВЫЧИСЛИТЕЛЬНОЙ ТЕХНИКИ</a>
+        <a class="cfd-a">БЛОК №3</a>
+    </div>
+    <div class="cafedra" id="cf4">
+        <img src="../img/4.svg">
+        <a class="cfd-h">КАФЕДРА Интеллектуальных и многопроцессорных систем</a>
+        <a class="cfd-a">БЛОК №4</a>
+    </div>
+    <div class="cafedra" id="cf5">
+        <img src="../img/5.svg">
+        <a class="cfd-h">КАФЕДРА Информационно-аналитических систем безопасности имени профессора Берштейна Леонида Самойловича</a>
+        <a class="cfd-a">БЛОК №5</a>
+    </div>
+    <div class="cafedra" id="cf6">
+        <img src="../img/6.svg">
+        <a class="cfd-h">КАФЕДРА Информационной безопасности телекоммуникационных систем</a>
+        <a class="cfd-a">БЛОК №6</a>
+    </div>
+    <div class="cafedra" id="cf7">
+        <img src="../img/7.svg">
+        <a class="cfd-h">КАФЕДРА Математического обеспечения и применения ЭВМ</a>
+        <a class="cfd-a">БЛОК №7</a>
+    </div>
+    <div class="cafedra" id="cf8">
+        <img src="../img/8.svg">
+        <a class="cfd-h">КАФЕДРА Психологии и безопасности жизнедеятельности</a>
+        <a class="cfd-a">БЛОК №8</a>
+    </div>
+    <div class="cafedra" id="cf9">
+        <img src="../img/9.svg">
+        <a class="cfd-h">КАФЕДРА Синергетики и процессов управления имени профессора Колесникова Анатолия Аркадьевича</a>
+        <a class="cfd-a">БЛОК №9</a>
+    </div>
+    <div class="cafedra" id="cf10">
+        <img src="../img/10.svg">
+        <a class="cfd-h">КАФЕДРА Систем автоматизированного проектирования</a>
+        <a class="cfd-a">БЛОК №10</a>
+    </div>
+    <div class="cafedra" id="cf11">
+        <img src="../img/11.svg">
+        <a class="cfd-h">КАФЕДРА Системного анализа и телекоммуникаций</a>
+        <a class="cfd-a">БЛОК №11</a>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<script>
+
+    function disabledall(){
+        for (let i = 0; i < 11; i++) {
+            document.getElementsByClassName("cafedra")[i].style.display = "none";
+        }
+    }
+
+
+    function cf1(){
+       disabledall();
+        document.getElementById("cf1").style.display = "block";
+    }
+
+    function cf2(){
+        disabledall();
+        document.getElementById("cf2").style.display = "block";
+    }
+
+    function cf3(){
+        disabledall();
+        document.getElementById("cf3").style.display = "block";
+    }
+
+    function cf4(){
+        disabledall();
+        document.getElementById("cf4").style.display = "block";
+    }
+
+    function cf5(){
+        disabledall();
+        document.getElementById("cf5").style.display = "block";
+    }
+
+    function cf6(){
+        disabledall();
+        document.getElementById("cf6").style.display = "block";
+    }
+
+    function cf7(){
+        disabledall();
+        document.getElementById("cf7").style.display = "block";
+    }
+
+    function cf8(){
+        disabledall();
+        document.getElementById("cf8").style.display = "block";
+    }
+
+    function cf9(){
+        disabledall();
+        document.getElementById("cf9").style.display = "block";
+    }
+
+    function cf10(){
+        disabledall();
+        document.getElementById("cf10").style.display = "block";
+    }
+
+    function cf11(){
+        disabledall();
+        document.getElementById("cf11").style.display = "block";
+    }
+
+
+
+
+    let i = 1;
+    for(let li of carousel.querySelectorAll('li')) {
+        li.style.position = 'relative';
+        li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+        i++;
+    }
+
+    /* конфигурация */
+    let width = 330 + 53 + 53; // ширина картинки
+    let count = 4; // видимое количество изображений
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0; // положение ленты прокрутки
+
+    carousel.querySelector('.button-prev').onclick = function() {
+        // сдвиг влево
+        position += width * 1;
+        // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+        position = Math.min(position, 0)
+        list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.button-next').onclick = function() {
+        // сдвиг вправо
+        position -= width * 1;
+        /*position -= width / 2;*/
+        /*position -= width / 2;*/
+        // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+        position = Math.max(position, -width * (listElems.length - count));
+        list.style.marginLeft = position + 'px';
+    };
+
+
+    function poliToLeft(){
+        pedToRight();
+        document.getElementById("POLI-main-block").style.animationDuration = "1.5s";
+        document.getElementById("POLI-main-block").style.animationName = "PoliToLeft";
+        document.getElementById("POLI-main-block").style.left = "182px";
+
+
+        /*document.getElementById("SFEDU-bg-1").style.width = "182px";
+        document.getElementById("SFEDU-bg-1").style.height = "711px";
+        document.getElementById("SFEDU-bg-1").style.borderRadius = "20px 0px 0px 20px";*/
+
+        document.getElementById("SFEDU-bg-1").style.display = "none";
+        document.getElementById("SFEDU-bg-2").style.display = "block";
+        document.getElementById("SFEDU-bg-3").style.display = "none";
+
+
+        document.getElementById("SFEDU").style.display = "none";
+        document.getElementById("POLI").style.display = "block";
+        document.getElementById("PED").style.display = "none";
+    }
+
+    function poliToRight(){
+        pedToRight();
+        document.getElementById("POLI-main-block").style.animationDuration = "1.5s";
+        document.getElementById("POLI-main-block").style.animationName = "PoliToRight";
+        document.getElementById("POLI-main-block").style.left = "1097px";
+        document.getElementById("SFEDU-bg-1").style.display = "block";
+        document.getElementById("SFEDU-bg-2").style.display = "none";
+        document.getElementById("SFEDU-bg-3").style.display = "none";
+
+
+        document.getElementById("SFEDU").style.display = "block";
+        document.getElementById("POLI").style.display = "none";
+        document.getElementById("PED").style.display = "none";
+    }
+
+
+
+    function pedToLeft(){
+        poliToLeft();
+        document.getElementById("PED-main-block").style.animationDuration = "1.5s";
+        document.getElementById("PED-main-block").style.animationName = "PedToLeft";
+        document.getElementById("PED-main-block").style.left = "364px";
+        document.getElementById("SFEDU-bg-1").style.display = "none";
+        document.getElementById("SFEDU-bg-2").style.display = "none";
+        document.getElementById("SFEDU-bg-3").style.display = "block";
+
+        document.getElementById("SFEDU").style.display = "none";
+        document.getElementById("POLI").style.display = "none";
+        document.getElementById("PED").style.display = "block";
+    }
+    function pedToRight(){
+        document.getElementById("PED-main-block").style.animationDuration = "1.5s";
+        document.getElementById("PED-main-block").style.animationName = "PedToRight";
+        document.getElementById("PED-main-block").style.left = "1279px";
+    }
+
+
+</script>
+<!--<script type="text/javascript">
+    flowplayer("player", {src : "https://www.youtube.com/watch?v=yAWx-cqstr0", wmode: "transparent"});
+</script>-->
+</body>
+</html>
