@@ -15,8 +15,23 @@ body{
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
-}
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Bitum';
+    src: url('fonts/bitum/Bitum.ttf') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Object Sans';
+    src: url('fonts/PP Object Sans/PPObjectSans-Heavy.otf') format('woff');
+    }
+    
+    /*@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/Inter.ttf') format('woff');
+    }*/
 
 #first-video{
     position:absolute;
@@ -30,77 +45,25 @@ body{
 #header-main{
     z-index: 99999;
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 60px;
     /*left: 0px;*/
-    /*background-color: grey;*/
-    /*background-color: white;*/
-    height: 80px;
-    width: 90%;
-    /*width: 100%;*/
+/*background-color: grey;*/
+/*background-color: white;*/
+height: 80px;
+width: 90%;
+/*width: 100%;*/
 
 
-}
-#l-button-top{
-    position: absolute;
-    width: 50.91px;
-    height: 0px;
-    top: 10px;
-    /*left: 704px;
-    top: 929.23px;*/
-
-    border: 1px solid #000000;
-    transform: rotate(-45deg);
-}
-#l-button-bot{
-    position: absolute;
-    width: 50.91px;
-    height: 0px;
-    top: 46px;
-    /*left: 704px;
-    top: 929px;*/
-
-    border: 1px solid #000000;
-    transform: rotate(45deg);
-}
-#r-button-top{
-    position: absolute;
-    width: 50.91px;
-    height: 0px;
-    top: 10px;
-    /*left: 704px;
-    top: 929.23px;*/
-
-    border: 1px solid #000000;
-    transform: rotate(45deg);
-}
-#r-button-bot{
-    position: absolute;
-    width: 50.91px;
-    height: 0px;
-    top: 46px;
-    /*left: 704px;
-    top: 929px;*/
-
-    border: 1px solid #000000;
-    transform: rotate(-45deg);
-}
-#first-screen{
-    position: absolute;
-    width: 1352px;
-    height: 161px;
-    left: 284px;
-    top: 42px;
-    /*background-color: red;*/
 }
 #logo{
     position: absolute;
     /*background-color: green;*/
     cursor:pointer;
-    top: -20px;
+    top: -10px;
     left: 340px;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 #name{
     /*background-color: red;*/
@@ -120,12 +83,12 @@ body{
     text-transform: uppercase;
 
     /* Accent */
-
+    cursor: default;
     color: #D1A954;
 }
 #IT{
     position: absolute;
-    width: 103.26px;
+    width: 123.26px;
     height: 18.15px;
     left: 1371.94px;
     top: 30px;
@@ -280,27 +243,61 @@ body::-webkit-scrollbar {
 }
 #an_h2{
     position:absolute;
-    left:100px;
+    left:300px;
     top:750px;
     font-size:64px;
     font-weight:normal;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 135%;
+    /* or 86px */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+
 }
 #af_an_h2{
     position:absolute;
-    width:1780px;
-    left:50px;
-    font-size:36px;
+    width:1300px;
+    left:300px;
+    font-size:30px;
     color:#616161;
     top:835px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    /* or 49px */
+
+
+    color: #616161;
 }
 
 #main_h2{
     position:absolute;
     top:1100px;
     margin:auto;
-    left:30%;
+    left:300px;
     font-family: "Montserrat";
     font-size:64px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 135%;
+    /* or 86px */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
 }
 
 
@@ -329,25 +326,30 @@ body::-webkit-scrollbar {
 #og-1{
     position:absolute;
     top:280px;
-    width:300px;
+    width:600px;
+    height: 200px;
     left:350px;
 }
 #og-2{
     position:absolute;
     top:280px;
-    width:300px;
+    width:600px;
     left:1250px;
+
 }
 #og-3{
     position:absolute;
     top:500px;
-    width:300px;
+    width:600px;
+    height: 100px;
     left:350px;
+
 }
 #og-4{
-    position:absolute;
+    position: absolute;
     top:500px;
-    width:300px;
+    width:600px;
+    height: 100px;
     left:1250px;
 }
 .og-icon{
@@ -357,6 +359,8 @@ body::-webkit-scrollbar {
     width:94px;
     left:-150px;
 }
+
+
 #oggetto button{
     width:400px;
     height:80px;
@@ -409,40 +413,58 @@ body::-webkit-scrollbar {
     color:#009C4F;
     position:absolute;
     font-size:78px;
-    top:260px;
+    top:270px;
     width:616px;
     height:129px;
-    left:167px;
+    font-family: 'Bitum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 78px;
+        line-height: 101px;
+        color: #009C4F;
+        left:210px;
 }
 #dunice p{
-    position: relative;
+    position: absolute;
     font-family:'Montserrat';
-    left:167px;
+    padding-right: 0%;
     width:900px;
     height:775px;
     font-size:53px;
     line-height:75px;
     font-weight:400;
-    top:370px;
+    top:380px;
     color:#FFFFFF;
+    font-family: 'Bitum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 75px;
+        color: #FFFFFF;
+        left:210px;
 }
 #dunice button{
     position:absolute;
     top:990px;
     left:663px;
-    width:470px;
+    width:505px;
     height:120px;
     border: 8px solid #50A261;
     font-size:70px;
     padding-top:-15px;
+    padding-left:20px;
     color:#FFFFFF;
     background-color:#101D23;
-}
-#dunice button:hover{
-    width:480px;
-    height:130px;
-    transition: 0.7s;
-    font-size:72px;
+    font-family: 'Bitum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 67px;
+    line-height: 101px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 #af-dunice{
     position:absolute;
@@ -476,6 +498,17 @@ body::-webkit-scrollbar {
     left:1090px;
     top:100px;
     width:500px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 145%;
+        /* or 99px */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #000000;
 }
 #f-in{
     position:absolute;
@@ -492,6 +525,18 @@ body::-webkit-scrollbar {
     left:150px;
     line-height:98px;
     color:#FFFFFF;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 145%;
+        /* or 99px */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        left: 210px
 }
 #inostudio button{
     position:absolute;
@@ -716,11 +761,12 @@ body::-webkit-scrollbar {
     height:96px;
     background-color: #3892ED;
     color:#201360;
-    left:977px;
-    top:750px;
+    left:577px;
+    top:850px;
     border-radius:50px;
     border:none;
     font-size:50px;
+    z-index: 999;
 }
 #pol-1{
     position:absolute;
@@ -765,7 +811,7 @@ body::-webkit-scrollbar {
     position:absolute;
     width:110%;
     background-color: #191C1F;
-    height:221px;   
+    height:221px;
 }
 #jus-main{
     position:absolute;
@@ -847,7 +893,6 @@ body::-webkit-scrollbar {
     font-weight:500;
 }
 #justice button:hover{
-    text-decoration: underline;
     text-decoration-color: #3978F4;
 }
 .point{
@@ -1074,7 +1119,7 @@ body::-webkit-scrollbar {
     left:1100px;
     top:560px;
 }
-#lac-circle{
+.lac-circle{
     position:absolute;
     top:43px;
     background-color: #1BA86B;
@@ -1088,7 +1133,7 @@ body::-webkit-scrollbar {
 }
 #lachestry button{
     position:absolute;
-    top:800px;
+    top:820px;
     left:700px;
     width:484px;
     height:124px;
@@ -1137,7 +1182,7 @@ body::-webkit-scrollbar {
 
 #second{
     position: absolute;
-    width: 261px;
+    width: 281px;
     height: 15px;
     left: 1290px;
     top: 80px;
