@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    width: 1900px;
+    height: 100%;
+    /* background: #FFFFFF;*/
+    /*background-color: grey;*/
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    /*    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff');*/
+}
+
+#SFEDU{
+    position: absolute;
+    top: 1000px;
+    background-color: red;
+    left: 200px;
+    width: 800px;
+    height: 1600px;
+    display: block;
+}
+#POLI{
+    position: absolute;
+    top: 1000px;
+    background-color: green;
+    left: 200px;
+    width: 800px;
+    height: 1600px;
+    display: none;
+}
+#PED{
+    position: absolute;
+    top: 1000px;
+    background-color: yellow;
+    left: 200px;
+    width: 800px;
+    height: 1600px;
+    display: none;
+}
+
+#slider{
+    position: absolute;
+    display: block;
+    top: 200px;
+    left: 230px;
+    width: 1460px;
+    height: 711px;
+    /*background-color: red;*/
+}
+
+
+.sub-slider{
+    position: absolute;
+    width: 182px;
+    height: 711px;
+
+    background: linear-gradient(90deg, #E4B859 0%, #EDBF5F 100%, #EDBF5F 100%, #EDBF5F 100%);
+    /*border-radius: 20px 0px 0px 20px;*/
+}
+
+#SFEDU-bg-1{
+    position: absolute;
+    z-index: -9;
+    display: block;
+}
+#SFEDU-bg-2{
+    position: absolute;
+    z-index: -9;
+    display: none;
+}
+#SFEDU-bg-3{
+    position: absolute;
+    z-index: -9;
+    display: none;
+}
+
+#SFEDU-block{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    top: 210px;
+    left: 51px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    padding-left: 0px;
+}
+
+#POLI-block{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    top: 50px;
+    left: 51px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    padding-left: 0px;
+}
+
+#PED-block{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    top: 210px;
+    left: 51px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    padding-left: 0px;
+}
+
+
+#SFEDU-main-block{
+    border-radius: 20px 0px 0px 20px;
+    cursor: pointer;
+}
+
+
+@keyframes PoliToLeft {
+    from {
+        left: 1097px;
+    }
+
+    to {
+        left: 182px;
+    }
+}
+
+@keyframes PoliToRight {
+    from {
+        left: 182px;
+    }
+
+    to {
+        left: 1097px;
+    }
+}
+
+
+#POLI-main-block{
+    left: 1097px;
+    cursor: pointer;
+
+}
+
+
+@keyframes PedToRight {
+    from {
+        left: 364px;
+    }
+
+    to {
+        left: 1279px;
+    }
+}
+
+@keyframes PedToLeft {
+    from {
+        left: 1279px;
+    }
+
+    to {
+        left: 364px;
+    }
+}
+
+#PED-main-block{
+    left: 1279px;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
