@@ -19,22 +19,22 @@ body{
 
 @font-face {
     font-family: 'Montserrat';
-    src: url( '../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    src: url( '../img/fonts/Montserrat-VariableFont_wght.ttf') format('woff');
     }
     
     @font-face {
     font-family: 'Bitum';
-    src: url('..fonts/bitum/Bitum.ttf') format('woff');
+    src: url('../img/fonts/bitum/Bitum.ttf') format('woff');
     }
     
     @font-face {
     font-family: 'Object Sans';
-    src: url('..onts/PP Object Sans/PPObjectSans-Heavy.otf') format('woff');
+    src: url('../img/fonts/PP Object Sans/PPObjectSans-Heavy.otf') format('woff');
     }
     
     @font-face {
     font-family: 'Inter';
-    src: url('..fonts/Inter/Inter.ttf') format('woff');
+    src: url('../img/fonts/Inter/Inter.ttf') format('woff');
     }
 img{
     width:auto;
@@ -706,7 +706,7 @@ img{
     width:1010px;
     height:1000px;
     top:6975px;
-    font-family:'Inter';
+    font-family:'Montserrat';
 }
 #jus-head{
     position:absolute;
