@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!$!au8+fts*o5=5kp)x9a0b*2u!p=jnvv0&sv$b7w02d%d#5(-
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-
+CSRF_TRUSTED_ORIGINS = ['https://*.tagantravel.ru']
 
 # Application definition
 

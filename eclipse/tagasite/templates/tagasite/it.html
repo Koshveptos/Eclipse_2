@@ -8,17 +8,20 @@
 
     <head>
         <meta charset = "utf-8">
-        <link rel = "stylesheet" href = "/it/static/it/css/it-desk.css" content="width=device-width">
-        <link rel="shortcut icon" href="/it/static/it/img/desc/images/other/logo.png" type="image/png">
+        <link rel = "stylesheet" href = "it-desk.css" content="width=device-width">
+        <link rel="shortcut icon" href="images/other/logo.png" type="image/png">
         <title>TGNit</title>
         <script type="text/javascript" src="flowplay/flowplayer-3.2.2.min.js"></script>
         <script type="text/javascript" src = "components/slider.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
         <nav id="header-main" lang="ru-RU" dir="ltr" role="navigation">
-            <img id="logo" src="/it/static/it/img/desc/images/other/logo.png" onclick="document.location='main.html'">
+            <img id="logo" src="images/logo2.svg" onclick="document.location='main.html'">
             <div id="sights" onclick="document.location='Attraction.html';">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</div>
             <div id="name">TGN_Travel</div>
             <div id="IT">IT-КОМПАНИИ</div>
@@ -28,38 +31,36 @@
 
         <iframe id = "first-video" poster  src="https://www.youtube.com/embed/rjLjkgPNe1g" title="IT-Столица России. Таганрог" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <h2 id = "an_h2">IT СТОЛИЦА ЮГА</h2>
+        <h2 id = "an_h2" >IT СТОЛИЦА ЮГА</h2>
         <p id = "af_an_h2">
-            В Таганроге сосредоточено большое количество разнонаправленных IT-компаний. В городе находятся академии, в которых начинающие разработчики могут повысить свою квалификацию. Стоит отметить, что в Таганроге подготавливает специалистов ИКТИБ, многие выпускники которого успешно продолжают свою профессиональную деятельность в IT-секторе.            
+            В Таганроге сосредоточено большое количество разнонаправленных IT-компаний. В городе находятся академии, в которых начинающие разработчики могут повысить свою квалификацию. Стоит отметить, что в Таганроге подготавливает специалистов ИКТИБ, многие выпускники которого успешно продолжают свою профессиональную деятельность в IT-секторе.
         </p>
         <h2 id = "main_h2">IT-КОМПАНИИ ТАГАНРОГА</h2>
 
         <div id = "line-bef"></div>
         <div id = "oggetto">
-            <img id = "main-logo" src = "/it/static/it/img/desc/images/other/oggetto.svg" alt="">
+            <img id = "main-logo" src = "images/other/oggetto.svg" alt="">
             <div id = "og-1">
-                <img class = "og-icon" alt="" src = "/it/static/it/img/desc/images/other/og-1.svg">
-                <p>
+                <img class = "og-icon" alt="" src = "images/other/og-1.svg">
+            <p class="og-txt" style="font-family: 'Montserrat';font-style: normal;font-weight: 500;font-size: 35px;line-height: 62px;color: #FFFFFF;">
                     13 лет опыта на рынках России и зарубежья
                 </p>
             </div>
             <div id = "og-2">
-                <img class = "og-icon"  alt="" src = "/it/static/it/img/desc/images/other/og-2.svg">
-                <p>
+                <img class = "og-icon"  alt="" src = "images/other/og-2.svg">
+            <p class="og-txt" style="font-family: 'Montserrat';font-style: normal;font-weight: 500;font-size: 35px;line-height: 62px;color: #FFFFFF;">
                     1-й официальный партнер Magento в России
                 </p>
             </div>
             <div id = "og-3">
-                <img class = "og-icon"  alt="" src = "/it/static/it/img/desc/images/other/og-3.svg">
-                <p>
-                    150+ человек в компании. Крупнейший собственный eCommerce production
-                </p>
+                <img class = "og-icon"  alt="" src = "images/other/og-3.svg">
+            <a style="font-family: 'Montserrat';font-style: normal;font-weight: 500;font-size: 35px;line-height: 62px;color: #FFFFFF;">150+ человек в компании. Крупнейший собственный eCommerce production</a>
             </div>
             <div id = "og-4">
-                <img class = "og-icon"  alt="" src = "/it/static/it/img/desc//images/other/og-4.svg">
-                <p>
+                <img class = "og-icon"  alt="" src = "images/other/og-4.svg">
+            <a style="font-family: 'Montserrat';font-style: normal;font-weight: 500;font-size: 35px;line-height: 62px;color: #FFFFFF;">
                     Входит в ТОП-5 компаний России, создающих системы электронной коммерции для крупных клиентов.
-                </p>
+                </a>
             </div>
             <form action="https://oggetto.ru/" target = "_blank" alt="">
                 <button>GO!</button>
@@ -70,34 +71,56 @@
 
 
         <div id = "dunice">
-            <img id = "logo-d" src = "/it/static/it/img/desc/images/other/dunice-logo.svg" alt="">
-            <img id = "side-photo" src = "/it/static/it/img/desc/images/other/dunice-side.svg" alt="">
-            <h3>О компании</h3>
-            <p>
-                Занимается разработкой веб-сайтов 
+            <img id = "logo-d" src = "images/other/dunice-logo.svg" alt="">
+            <img id = "side-photo" src = "images/other/dunice-side.svg" alt="">
+        <h3>О компании</h3>
+        <p>
+                Занимается разработкой веб-сайтов
                 <br>
-                и 
+                и
                 мобильных приложений,
                 <br>
                 аналитикой,
                 <br>
                 дизайном,
                 <br>
-                технической поддержкой и DevOps. 
+                технической поддержкой и DevOps.
             </p>
             <form action="https://www.dunice.net/ru" target = "_blank">
-                <button>ПОДРОБНЕЙ</button>
+            <button>ПОДРОБНЕЙ</button>
             </form>
-        </div>  
+        </div>
         <div id = "af-dunice"></div>
 
         <div id = "inostudio">
-            <img id ="in-logo" src = "/it/static/it/img/desc/images/other/for-inostudio.svg" alt="">
-            <img id = "f-in" src = "/it/static/it/img/desc/images/other/Ellipse 11.svg" alt="">
-            <p id = "in-img">
+            <img id ="in-logo" src = "images/other/for-inostudio.svg" alt="">
+            <img id = "f-in" src = "images/other/Ellipse 11.svg" alt="">
+        <p id = "in-img" style="font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 145%;
+        /* or 99px */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #000000;
+        ">
                 Job-сайт для альфа-банка, социальная сеть для ученых
             </p>
-            <p id = "in-p">
+        <p id = "in-p" style="font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 145%;
+        /* or 99px */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        left: 210px">
                 сервисы в области электронной торговли, образования,  девелопмента
             </p>
             <form action="https://inostudio.com/" target = "_blank">
@@ -108,7 +131,7 @@
 
         <div id = "umbrella">
             <div id = "um-head">
-                <img src = "/it/static/it/img/desc/images/other/umbrella.svg" alt="">
+                <img src = "images/other/umbrella.svg" alt="">
             </div>
             <div id = "um-main">
                 <div id = "f-line"></div>
@@ -137,19 +160,71 @@
 
 
         <div id = "alpaca">
+        <div style="position: absolute;
+        width: 89px;
+        height: 89px;
+        left: 321px;
+        top:430px;
+
+
+        background: #FFA800;
+        border-radius: 89px;"></div>
+        <div style="position: absolute;
+        width: 89px;
+        height: 89px;
+        left: 321px;
+        top:648px;
+
+
+        background: #FFA800;
+        border-radius: 89px;"></div>
+
             <h2>ALPACA</h2>
             <h3>IT company</h3>
-            <p>
+        <a style="position: absolute;
+        width: 809px;
+        height: 320px;
+        left: 482px;
+        top:300px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 145%;
+        /* or 80px */
+
+        letter-spacing: 0.05em;
+
+        color: #F7EBBC;
+        ">
                 Разработка приложений для стартапов, быстрорастущих компаний и бизнеса
-            </p>
-            <img id = "pol-1" src = "/it/static/it/img/desc/images/other/polygon-1.svg" alt="">
-            <img id = "pol-2" src = "/it/static/it/img/desc/images/other/polygon-2.svg" alt="">
-            <img id = "pol-3" src="/it/static/it/img/desc/images/other/polygon-3.svg"   alt="">
-            <form action="https://alpacait.com/" target = "_blank">
+            </a>
+        <a style="position: absolute;
+        width: 883px;
+        height: 160px;
+        left: 485px;
+        top:600px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 55px;
+        line-height: 145%;
+        /* or 80px */
+
+        letter-spacing: 0.05em;
+
+        color: #F7EBBC;
+        ">Академия выпустившая десятки спецаилистов</a>
+            <img id = "pol-1" src = "images/other/polygon-1.svg" alt="">
+            <img id = "pol-2" src = "images/other/polygon-2.svg" alt="">
+            <img id = "pol-3" src="images/other/polygon-3.svg"   alt="">
+            <!--<form action="https://alpacait.com/" target = "_blank">
                 <button id ="orange">КЛИЕНТУ</button>
-            </form>
+            </form>-->
             <form  action="https://alpacait.com/" target = "_blank">
-                <button id = "blue">РАЗРАБОТЧИКУ</button>
+                <button id = "blue">ПОДРОБНЕЕ</button>
             </form>
         </div>
         <div id = "af-alpaca"></div>
@@ -157,42 +232,173 @@
 
         <div id = "justice">
             <div id = "jus-head">
-                <img src = "/it/static/it/img/desc/images/other/justice.svg" alt="">
+                <img src = "images/other/justice.svg" alt="">
             </div>
             <div id = "jus-main">
-                <img id = "back" src = "/it/static/it/img/desc/images/other/for-justice.svg" alt = "">
-                <h2>О КОМПАНИИ</h2>
+                <img id = "back" src = "images/other/for-justice.svg" alt = "">
+            <a style="position: absolute;
+            width: 768px;
+            height: 95px;
+            left: 274px;
+            top: 270px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 79px;
+            line-height: 135%;
+            /* or 107px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #000000;
+            ">О компании</a>
                 <div class = "j-block" id = "f-block">
                     <div class = 'point' id = 'f'></div>
-                    <h3>СПЕЦИАЛИСТЫ</h3>
-                    <p>
+                <a style="font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 135%;
+                /* identical to box height, or 41px */
+                position: absolute;
+                width: 207px;
+                height: 41px;
+                left:20px;
+                top:75px;
+
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+                ">Специалисты</a>
+                <p style="font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 135%;
+                /* or 27px */
+
+                display: flex;
+                align-items: center;
+
+                color: #A7A9AD;
+                width:250px;
+                ">
                         В штабе компании более 35 опытных специалистов
                     </p>
                 </div>
                 <div class = "j-block" id = "s-block">
                     <div class = 'point' id = 's'></div>
-                    <h3>МЕРОПРИЯТИЯ</h3>
-                    <p>
+                <a style="font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 135%;
+                /* identical to box height, or 41px */
+                position: absolute;
+                width: 207px;
+                height: 41px;
+                left:20px;
+                top:75px;
+
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+                ">Мероприятия</a>
+                <p style="font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                width:250px;
+                font-size: 25px;
+                line-height: 135%;
+                /* or 27px */
+
+                display: flex;
+                align-items: center;
+
+                color: #A7A9AD;
+                ">
                         Более 50 мероприятий, проведенных внутри компании в этом году
                     </p>
                 </div>
                 <div class = "j-block" id = "t-block">
                     <div class = 'point' id = 't'></div>
-                    <h3>ФИНТЕХ</h3>
-                    <p>
+                <a style="font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 135%;
+                /* identical to box height, or 41px */
+                position: absolute;
+                width: 207px;
+                height: 41px;
+                left:20px;
+                top:75px;
+
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+                ">Финтех</a>
+                <p style="
+                width:250px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 135%;
+                /* or 27px */
+
+                display: flex;
+                align-items: center;
+
+                color: #A7A9AD;
+                ">
                         Основной сферой деятельности компании является финтех. Готово более 15 проектов
                     </p>
                 </div>
                 <div class = "j-block" id = "fo-block">
                     <div class = 'point' id = 'fo'></div>
-                    <h3>ЭКОЛОГИЯ</h3>
-                    <p>
+                <a style="font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 135%;
+                /* identical to box height, or 41px */
+                position: absolute;
+                width: 207px;
+                height: 41px;
+                left:20px;
+                top:75px;
+
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+                ">Экология</a>
+                <p style="font-family: 'Inter';
+                font-style: normal;
+                width:300px;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 135%;
+                /* or 27px */
+
+                display: flex;
+                align-items: center;
+
+                color: #A7A9AD;
+                "   >
                         20кг макулатуры и более 100 ПЭТ-бутылок было отправлено компанией на переработку
                     </p>
                 </div>
             </div>
             <form  action="https://justice-it.ru/" target = "_blank">
-                <button>ПОДРОБНЕЕ</button>
+                <button style="left:274px; top:600px;">ПОДРОБНЕЕ</button>
             </form>
         </div>
         <div id = "af-jus"></div>
@@ -200,14 +406,14 @@
 
 
         <div id = "exceed">
-            <img id ="ex-logo" src = "/it/static/it/img/desc/images/other/exceed-logo.svg" alt="">
+            <img id ="ex-logo" src = "images/other/exceed-logo.svg" alt="">
             <h2>О компании</h2>
             <p id = "ex-p">
                 Компания занимается веб- и мобильной разработкой в области CRM-систем для бизнеса
             </p>
-            <img id = "ex-side" src = "/it/static/it/img/desc/images/other/exceed-side.svg" alt="">
+            <img id = "ex-side" src = "images/other/exceed-side.svg" alt="">
             <div class = "exceed-block" id = "ex-first">
-                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <img src = "images/other/exceed-block.svg" alt = "">
                 <p>
                     Fullstack-разработка.
                     Работа как с клиентс-
@@ -216,7 +422,7 @@
                 </p>
             </div>
             <div class = "exceed-block" id = "ex-second">
-                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <img src = "images/other/exceed-block.svg" alt = "">
                 <p>
                     Нативная и кроссплат-
                     форменная разработка
@@ -225,7 +431,7 @@
                 </p>
             </div>
             <div class = "exceed-block" id = "ex-third">
-                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <img src = "images/other/exceed-block.svg" alt = "">
                 <p>
                     UX/UI Дизайн удобный
                     для использования на
@@ -233,18 +439,18 @@
                 </p>
             </div>
             <div class = "exceed-block" id = "ex-fourth">
-                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <img src = "images/other/exceed-block.svg" alt = "">
                 <p>
                     DEVOPS
                     Используются лучшие
-                    методы и практики 
+                    методы и практики
                     Devops для повыше-
                     ния эффективности
                     работы
                 </p>
             </div>
             <div class = "exceed-block" id = "ex-fifth">
-                <img src = "/it/static/it/img/desc/images/other/exceed-block.svg" alt = "">
+                <img src = "images/other/exceed-block.svg" alt = "">
                 <p>
                     Тестирование
                     Специалисты контро-
@@ -262,37 +468,45 @@
 
 
         <div id = "lachestry">
-            <img id = "lac-name" src = "/it/static/it/img/desc/images/other/lachestry-name.svg" alt="">
-            <img src = "/it/static/it/img/desc/images/other/lac-logo.svg" id = "lac-logo" alt = "">
-            <h2 id = "lac-h2">О компании</h2>
+        <img id = "lac-name" src = "images/other/lachestry-name.svg" alt="" style="left:150px;">
+            <img src = "images/other/lac-logo.svg" id = "lac-logo" alt = "" style="left:510px;">
+        <h2 id = "lac-h2" style="font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 96px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;">О компании</h2>
             <p id = "under-h2">
-                Компания предоставляет услуги для электронной коммерции. В возможности разработчиков входит выполнение заказов по сложности от цикла разработки сайта Magento, до реализации расширений для Magento. 
+                Компания предоставляет услуги для электронной коммерции. В возможности разработчиков входит выполнение заказов по сложности от цикла разработки сайта Magento, до реализации расширений для Magento.
             </p>
             <div class = "side-inf" id = "first-side-inf">
                 <p>
                     Команда работает с обеими версиями Magento.
                 </p>
-                <div id = "lac-circle"></div>
+                <div class = "lac-circle"></div>
             </div>
             <div class = "side-inf" id = "second-side-inf">
                 <p>
                     Знания специалистов подтверждены официальными сертификатами Magento.
                 </p>
-                <div id = "lac-circle"></div>
+                <div class = "lac-circle"></div>
             </div>
             <form  action="https://lachestry.com/" target = "_blank">
                 <button>ПОДРОБНЕЕ</button>
             </form>
         </div>
 
-        
+
         <div id = "line-bef-2"></div>
 
 
         <div id="last-block">
             <a id="first">Copyright (с) 2022 Eclipse</a>
             <a id="second">Telegram —     Vkontakte —     E-mail</a>
-            <img id="last-picture" src="/it/static/it/img/desc/images/other/Full_Logo.svg" alt="">
+            <img id="last-picture" src="images/other/Full_Logo.svg" alt="">
         </div>
 
     </body>
