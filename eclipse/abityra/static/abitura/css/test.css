@@ -180,7 +180,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer; }
 
 #st3 {
-  background: url("../img/images/ictis-first.svg");
+  background: url("../img/images/bg-icib.jpg");
   background-size: 100%; }
 
 @keyframes PoliToLeft {
@@ -401,8 +401,11 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat; }
 
 #ICTIB {
-  background: url("../img/images/ictis-first.svg");
-  background-size: 100%; }
+  background: url("../img/images/bg-ictib3.jpg");
+  background-size: 100%;
+  background-position-y: -60rem;
+  background-repeat: no-repeat;
+}
 
 .selection-block-bg {
   display: flex;
@@ -895,7 +898,7 @@ body::-webkit-scrollbar-thumb {
 .set-pos-ius {
   width: 180rem;
   height: 90rem;
-  margin-top: 10rem;
+  margin-top: 20rem;
   margin-left: auto;
   margin-right: auto; }
 
@@ -964,8 +967,11 @@ body::-webkit-scrollbar-thumb {
 
 #INEP {
   margin-top: 10rem;
-  background: url("../img/images/ictis-first.svg");
-  background-size: 100%; }
+  background: url("../img/images/bg-inep.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -50rem;
+}
 
 .INEP-MAIN {
   margin-left: auto;
@@ -1026,8 +1032,11 @@ body::-webkit-scrollbar-thumb {
 
 #IRTSU {
   margin-top: 10rem;
-  background: url("../img/images/ictis-first.svg");
-  background-size: 100%; }
+  background: url("../img/images/bg-icib3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -20rem;
+}
 
 .set-pos-irtsu {
   display: flex;
@@ -1116,7 +1125,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 2rem; }
 
 .last-line {
-  width: 110%;
+  width: 100%;
   height: 0.5rem;
   background-color: #D1A954; }
 
@@ -1155,12 +1164,16 @@ body::-webkit-scrollbar-thumb {
   height: 15rem; }
 
 #POLITEH {
-  background: url("../img/images/ictis-first.svg");
-  background-size: 100%; }
+  background: url("../img/images/DGTU.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 #RINH {
-  background: url("../img/images/ictis-first.svg");
-  background-size: 100%; }
+  background: url("../img/images/PED.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 #POLI {
   display: flex;

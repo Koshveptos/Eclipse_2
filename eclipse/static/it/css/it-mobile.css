@@ -1,16 +1,16 @@
 
 html{
     position:absolute;
-    width:1010px;
-    left:-10px;
+    /*width:1000px;
+    !*left:-10px;*!
     overflow-x:hidden;
-    height:10000px;
+    height:10000px;*/
 }
 
 body{
     position: absolute;
     width: 1000px;
-    left:-10px;
+    left:-5px;
     height: 10000px;
     background: #FFFFFF;
     overflow-x: hidden;
